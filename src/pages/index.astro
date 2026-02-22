@@ -1,0 +1,1638 @@
+---
+
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Draft — LinkedIn Ghostwriter for B2B SaaS CEOs</title>
+<meta name="description" content="One LinkedIn post. 15 demos booked. CEO ghostwriting engineered for pipeline, not applause. For B2B SaaS CEOs selling $30K+ ACV deals.">
+<meta property="og:title" content="Draft — LinkedIn Ghostwriter for B2B SaaS CEOs">
+<meta property="og:description" content="One LinkedIn post. 15 demos booked. CEO ghostwriting engineered for pipeline, not applause.">
+<meta property="og:url" content="https://draftrev.com">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Draft — LinkedIn Ghostwriter for B2B SaaS CEOs">
+<meta name="twitter:description" content="One LinkedIn post. 15 demos booked. CEO ghostwriting engineered for pipeline, not applause.">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --bg: #FAF7F2;
+  --bg-elevated: #F0EBE3;
+  --bg-card: #FFFFFF;
+  --border: #E0D8CC;
+  --border-hover: #C8BEAE;
+  --text-muted: #9A9185;
+  --text-secondary: #6B6158;
+  --text: #3D352D;
+  --text-bright: #1A1510;
+  --accent: #E8553A;
+  --accent-hover: #D44425;
+  --accent-dim: rgba(232, 85, 58, 0.06);
+  --accent-glow: rgba(232, 85, 58, 0.10);
+  --font-display: 'Instrument Serif', Georgia, serif;
+  --font-body: 'Outfit', -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --container: 1140px;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-body);
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  cursor: none;
+}
+
+::selection { background: rgba(232, 85, 58, 0.15); color: var(--text-bright); }
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: var(--bg-elevated); }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
+a { color: inherit; text-decoration: none; cursor: none; }
+button { cursor: none; }
+.container { max-width: var(--container); margin: 0 auto; padding: 0 2rem; }
+
+/* ── CUSTOM CURSOR ── */
+.cursor {
+  width: 14px; height: 14px;
+  border: 1.5px solid var(--accent);
+  border-radius: 50%;
+  position: fixed; top: 0; left: 0;
+  pointer-events: none; z-index: 10001;
+  transition: width 0.35s var(--ease-spring), height 0.35s var(--ease-spring),
+              margin 0.35s var(--ease-spring), border-color 0.3s ease, background 0.3s ease;
+  margin: -7px 0 0 -7px;
+}
+.cursor.hover {
+  width: 48px; height: 48px;
+  margin: -24px 0 0 -24px;
+  background: rgba(232, 85, 58, 0.08);
+  border-color: rgba(232, 85, 58, 0.5);
+}
+@media (hover: none), (pointer: coarse) {
+  .cursor { display: none; }
+  body, a, button { cursor: auto; }
+}
+
+/* ── GRAIN ── */
+.grain {
+  position: fixed; inset: 0;
+  pointer-events: none; z-index: 9999;
+  opacity: 0.04; mix-blend-mode: multiply;
+}
+.grain svg { width: 100%; height: 100%; }
+
+/* ── NAV ── */
+nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  padding: 1.25rem 0;
+  transition: all 0.5s var(--ease-out);
+}
+nav.scrolled {
+  background: rgba(250, 247, 242, 0.9);
+  backdrop-filter: blur(24px) saturate(1.4);
+  -webkit-backdrop-filter: blur(24px) saturate(1.4);
+  border-bottom: 1px solid var(--border);
+  padding: 0.85rem 0;
+}
+nav .container { display: flex; align-items: center; justify-content: space-between; }
+.nav-logo {
+  font-family: var(--font-display);
+  font-size: 1.35rem; color: var(--text-bright);
+  font-style: italic;
+  letter-spacing: -0.01em;
+}
+.nav-links { display: flex; align-items: center; gap: 2.5rem; }
+.nav-links a {
+  font-size: 0.82rem; font-weight: 400;
+  color: var(--text-secondary);
+  transition: color 0.3s ease;
+}
+.nav-links a:hover { color: var(--text-bright); }
+.nav-cta {
+  font-size: 0.78rem !important; font-weight: 600 !important;
+  color: #FFFFFF !important;
+  background: var(--accent);
+  padding: 0.5rem 1.2rem;
+  border-radius: 100px;
+  transition: all 0.35s var(--ease-out) !important;
+}
+.nav-cta:hover {
+  background: var(--accent-hover);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 20px rgba(232, 85, 58, 0.25);
+}
+
+/* ── HERO ── */
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex; align-items: center;
+  padding: 6.5rem 0 3rem;
+  overflow: hidden;
+}
+.hero-mesh { position: absolute; inset: -20%; width: 140%; height: 140%; }
+.hero-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(100px);
+  will-change: transform;
+}
+.hero-orb:nth-child(1) {
+  width: 55%; height: 55%;
+  top: 5%; left: 5%;
+  background: rgba(232, 85, 58, 0.06);
+  animation: float1 22s ease-in-out infinite;
+}
+.hero-orb:nth-child(2) {
+  width: 45%; height: 45%;
+  top: 20%; right: -5%;
+  background: rgba(180, 120, 60, 0.05);
+  animation: float2 28s ease-in-out infinite;
+}
+.hero-orb:nth-child(3) {
+  width: 40%; height: 40%;
+  bottom: 5%; left: 25%;
+  background: rgba(200, 160, 90, 0.04);
+  animation: float3 25s ease-in-out infinite;
+}
+@keyframes float1 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(8%, -12%) scale(1.05); }
+  66% { transform: translate(-5%, 8%) scale(0.95); }
+}
+@keyframes float2 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(-12%, 10%) scale(0.95); }
+  66% { transform: translate(6%, -8%) scale(1.08); }
+}
+@keyframes float3 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(10%, -6%) scale(1.04); }
+  66% { transform: translate(-8%, 12%) scale(0.96); }
+}
+
+.hero-grid {
+  position: absolute; inset: 0;
+  background-image:
+    linear-gradient(rgba(232, 85, 58, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(232, 85, 58, 0.04) 1px, transparent 1px);
+  background-size: 80px 80px;
+  mask-image: radial-gradient(ellipse 60% 55% at 50% 40%, black 10%, transparent 65%);
+  -webkit-mask-image: radial-gradient(ellipse 60% 55% at 50% 40%, black 10%, transparent 65%);
+}
+
+.hero .container { position: relative; z-index: 2; }
+
+/* ── HERO SPLIT GRID ── */
+.hero-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 2rem;
+}
+.hero-content { /* text side */ }
+
+/* ── DRAFT TAP ── */
+.hero-tap {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 560px;
+  opacity: 0;
+  animation: fadeUp 1s var(--ease-out) 0.4s both;
+}
+.tap-svg {
+  width: 160px;
+  position: relative;
+  z-index: 2;
+  filter: drop-shadow(0 12px 40px rgba(26, 21, 16, 0.12))
+         drop-shadow(0 4px 12px rgba(26, 21, 16, 0.08));
+}
+.tap-handle-group {
+  transform-origin: 120px 88px;
+  animation: handlePull 1.2s var(--ease-out) 0.9s both;
+}
+@keyframes handlePull {
+  0% { transform: rotate(12deg); }
+  60% { transform: rotate(-2deg); }
+  100% { transform: rotate(0deg); }
+}
+.tap-drip {
+  animation: dripForm 1.8s ease-in-out 1.4s both;
+}
+@keyframes dripForm {
+  0% { ry: 0; opacity: 0; }
+  40% { ry: 6; opacity: 0.5; }
+  70% { ry: 8; opacity: 0.3; cy: 318; }
+  100% { ry: 0; opacity: 0; cy: 330; }
+}
+
+/* Multi-layer stream */
+.tap-stream-wrap {
+  position: absolute;
+  top: 222px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  width: 60px;
+  height: 280px;
+  display: flex;
+  justify-content: center;
+}
+.tap-stream {
+  width: 20px;
+  height: 0;
+  background: linear-gradient(180deg,
+    #E8553A,
+    #D96A48 25%,
+    #D4884A 55%,
+    rgba(212, 136, 74, 0.4) 85%,
+    transparent
+  );
+  border-radius: 10px 10px 20px 20px;
+  animation: streamPour 1.4s var(--ease-out) 1.7s both;
+  position: relative;
+}
+/* Outer glow */
+.tap-stream::before {
+  content: '';
+  position: absolute;
+  top: 0; left: -10px;
+  width: calc(100% + 20px);
+  height: 100%;
+  background: linear-gradient(180deg,
+    rgba(232, 85, 58, 0.2),
+    rgba(212, 136, 74, 0.08),
+    transparent
+  );
+  border-radius: 20px;
+  filter: blur(8px);
+}
+/* Highlight streak */
+.tap-stream::after {
+  content: '';
+  position: absolute;
+  top: 8px; left: 4px;
+  width: 5px; height: 0;
+  background: rgba(255, 255, 255, 0.22);
+  border-radius: 3px;
+  animation: streamShine 1.4s var(--ease-out) 1.7s both, streamShimmer 2.5s ease-in-out 3.1s infinite;
+}
+@keyframes streamPour {
+  from { height: 0; opacity: 0; }
+  to { height: 260px; opacity: 0.8; }
+}
+@keyframes streamShine {
+  from { height: 0; }
+  to { height: 60%; }
+}
+@keyframes streamShimmer {
+  0%, 100% { opacity: 0.22; }
+  50% { opacity: 0.4; }
+}
+
+/* Splash / pool at bottom of stream */
+.tap-splash {
+  position: absolute;
+  bottom: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 12px;
+  background: radial-gradient(ellipse, rgba(212, 136, 74, 0.25), transparent 70%);
+  border-radius: 50%;
+  filter: blur(4px);
+  animation: splashAppear 0.6s var(--ease-out) 2.6s both;
+}
+@keyframes splashAppear {
+  from { opacity: 0; transform: translateX(-50%) scaleX(0.3); }
+  to { opacity: 1; transform: translateX(-50%) scaleX(1); }
+}
+
+/* Metric pills that pour out */
+.tap-pills {
+  position: absolute;
+  top: 290px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 300px;
+  z-index: 3;
+}
+.tap-pill {
+  position: absolute;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 100px;
+  padding: 0.45rem 1rem;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  font-weight: 500;
+  color: var(--text-bright);
+  white-space: nowrap;
+  opacity: 0;
+  box-shadow: 0 4px 24px rgba(26, 21, 16, 0.06), 0 1px 3px rgba(26, 21, 16, 0.04);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+.tap-pill .pill-num {
+  color: var(--accent);
+  font-weight: 700;
+}
+/* Featured pill — first one gets accent border */
+.tap-pill.featured {
+  border-color: rgba(232, 85, 58, 0.3);
+  box-shadow: 0 4px 24px rgba(232, 85, 58, 0.08), 0 1px 3px rgba(26, 21, 16, 0.04);
+}
+
+.tap-pill:nth-child(1) {
+  top: 0; left: 50%; margin-left: -55px;
+  animation: pillDrop 0.7s var(--ease-spring) 2.2s both;
+}
+.tap-pill:nth-child(2) {
+  top: 48px; left: 4%;
+  animation: pillDrop 0.7s var(--ease-spring) 2.45s both;
+}
+.tap-pill:nth-child(3) {
+  top: 48px; right: 0;
+  animation: pillDrop 0.7s var(--ease-spring) 2.65s both;
+}
+.tap-pill:nth-child(4) {
+  top: 96px; left: 12%;
+  animation: pillDrop 0.7s var(--ease-spring) 2.85s both;
+}
+.tap-pill:nth-child(5) {
+  top: 96px; right: 6%;
+  animation: pillDrop 0.7s var(--ease-spring) 3.05s both;
+}
+.tap-pill:nth-child(6) {
+  top: 144px; left: 50%; margin-left: -44px;
+  animation: pillDrop 0.7s var(--ease-spring) 3.25s both;
+}
+@keyframes pillDrop {
+  0% { opacity: 0; transform: translateY(-20px) scale(0.8); }
+  60% { opacity: 1; transform: translateY(4px) scale(1.02); }
+  100% { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+/* Ambient float after landing — triggered by JS */
+.tap-pill.floating:nth-child(1) { animation: pillBob1 3.5s ease-in-out infinite; }
+.tap-pill.floating:nth-child(2) { animation: pillBob2 4.0s ease-in-out infinite; }
+.tap-pill.floating:nth-child(3) { animation: pillBob1 3.8s ease-in-out 0.3s infinite; }
+.tap-pill.floating:nth-child(4) { animation: pillBob2 4.2s ease-in-out 0.5s infinite; }
+.tap-pill.floating:nth-child(5) { animation: pillBob1 3.6s ease-in-out 0.2s infinite; }
+.tap-pill.floating:nth-child(6) { animation: pillBob2 4.5s ease-in-out 0.4s infinite; }
+.tap-pill.floating { opacity: 1; }
+@keyframes pillBob1 {
+  0%, 100% { opacity: 1; transform: translateY(0); }
+  50% { opacity: 1; transform: translateY(-5px); }
+}
+@keyframes pillBob2 {
+  0%, 100% { opacity: 1; transform: translateY(0); }
+  50% { opacity: 1; transform: translateY(-7px); }
+}
+
+/* Ambient glow behind tap */
+.tap-glow {
+  position: absolute;
+  top: 40px; left: 50%;
+  transform: translateX(-50%);
+  width: 180px; height: 200px;
+  background: radial-gradient(ellipse,
+    rgba(232, 85, 58, 0.08) 0%,
+    rgba(212, 136, 74, 0.04) 40%,
+    transparent 70%
+  );
+  border-radius: 50%;
+  animation: glowPulse 4s ease-in-out 2.5s infinite;
+  pointer-events: none;
+  z-index: 0;
+}
+@keyframes glowPulse {
+  0%, 100% { opacity: 0.6; transform: translateX(-50%) scale(1); }
+  50% { opacity: 1; transform: translateX(-50%) scale(1.08); }
+}
+
+.hero-badge {
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  font-size: 0.75rem; font-weight: 500;
+  color: var(--accent);
+  background: var(--accent-dim);
+  border: 1px solid rgba(232, 85, 58, 0.15);
+  padding: 0.4rem 1rem;
+  border-radius: 100px;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.03em;
+  animation: fadeUp 0.8s var(--ease-out) 0.1s both;
+}
+.hero-badge::before {
+  content: '';
+  width: 6px; height: 6px;
+  background: var(--accent);
+  border-radius: 50%;
+  animation: pulse 2s ease-in-out infinite;
+}
+@keyframes pulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(232, 85, 58, 0.5); }
+  50% { box-shadow: 0 0 0 6px rgba(232, 85, 58, 0); }
+}
+
+.hero h1 {
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 6.5vw, 5.2rem);
+  line-height: 1.05;
+  color: var(--text-bright);
+  max-width: 850px;
+  margin-bottom: 1.25rem;
+}
+.hero-line {
+  display: block; opacity: 0;
+  animation: lineReveal 0.9s var(--ease-out) both;
+}
+.hero-line:nth-child(1) { animation-delay: 0.2s; }
+.hero-line:nth-child(2) { animation-delay: 0.35s; }
+@keyframes lineReveal {
+  from { opacity: 0; transform: translateY(30px); filter: blur(4px); }
+  to { opacity: 1; transform: translateY(0); filter: blur(0); }
+}
+.hero h1 .dim {
+  color: var(--border-hover);
+  text-decoration: line-through;
+  text-decoration-color: var(--border-hover);
+  text-decoration-thickness: 2px;
+}
+.hero h1 .pop {
+  color: var(--accent);
+  font-style: italic;
+}
+
+.hero-sub {
+  font-size: 1.18rem; font-weight: 300;
+  color: var(--text-secondary);
+  max-width: 540px;
+  line-height: 1.75;
+  margin-bottom: 1.75rem;
+  opacity: 0;
+  animation: fadeUp 0.9s var(--ease-out) 0.5s both;
+}
+.hero-sub em {
+  font-style: italic;
+  font-family: var(--font-display);
+  color: var(--accent);
+  font-size: 1.15em;
+}
+
+.hero-ctas {
+  display: flex; gap: 1rem; align-items: center;
+  margin-bottom: 2.5rem;
+  opacity: 0;
+  animation: fadeUp 0.9s var(--ease-out) 0.65s both;
+}
+
+/* ── BUTTONS ── */
+.btn {
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  font-family: var(--font-body);
+  font-size: 0.9rem; font-weight: 500;
+  padding: 0.9rem 1.85rem;
+  border-radius: 100px;
+  border: none;
+  transition: all 0.4s var(--ease-out);
+  position: relative; overflow: hidden;
+}
+.btn-primary {
+  background: var(--accent);
+  color: #FFFFFF;
+}
+.btn-primary::after {
+  content: '';
+  position: absolute; inset: 0;
+  background: linear-gradient(135deg, rgba(255,255,255,0.25), transparent 60%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+.btn-primary:hover::after { opacity: 1; }
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 32px rgba(232, 85, 58, 0.25), 0 2px 8px rgba(232, 85, 58, 0.15);
+}
+.btn-ghost {
+  background: transparent;
+  color: var(--text);
+  border: 1px solid var(--border);
+}
+.btn-ghost:hover {
+  color: var(--text-bright);
+  border-color: var(--text-muted);
+  background: rgba(26, 21, 16, 0.04);
+}
+.btn-arrow { transition: transform 0.3s var(--ease-out); }
+.btn:hover .btn-arrow { transform: translateX(4px); }
+
+.hero-proof {
+  display: flex; align-items: center; gap: 2.5rem;
+  flex-wrap: wrap;
+  opacity: 0;
+  animation: fadeUp 0.9s var(--ease-out) 0.8s both;
+}
+.proof-item { display: flex; flex-direction: column; }
+.proof-number {
+  font-family: var(--font-mono);
+  font-size: 1.6rem; font-weight: 700;
+  color: var(--text-bright);
+}
+.proof-label {
+  font-size: 0.72rem; font-weight: 400;
+  color: var(--text-secondary);
+}
+.proof-divider { width: 1px; height: 36px; background: var(--border); }
+
+.hero-note {
+  margin-top: 1.75rem;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  font-style: italic;
+  opacity: 0;
+  animation: fadeUp 0.9s var(--ease-out) 0.95s both;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ── DUAL TICKER ── */
+.ticker-wrapper {
+  overflow: hidden;
+  padding: 0.5rem 0;
+  position: relative;
+}
+.ticker-strip {
+  padding: 0.75rem 0;
+  overflow: hidden;
+}
+.ticker-strip--primary {
+  background: var(--accent);
+  transform: rotate(-1.8deg) scale(1.08);
+  position: relative; z-index: 2;
+}
+.ticker-strip--secondary {
+  background: var(--bg-card);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  transform: rotate(1.2deg) scale(1.06);
+  margin-top: -8px;
+  position: relative; z-index: 1;
+}
+.ticker-track { display: flex; width: max-content; }
+.ticker-strip--primary .ticker-track { animation: tickerScroll 28s linear infinite; }
+.ticker-strip--secondary .ticker-track { animation: tickerScroll 35s linear infinite reverse; }
+.ticker-content {
+  display: flex; align-items: center;
+  white-space: nowrap; flex-shrink: 0;
+}
+.ticker-item {
+  font-family: var(--font-mono);
+  font-size: 0.72rem; font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 0 1.5rem;
+}
+.ticker-strip--primary .ticker-item { color: #FFFFFF; }
+.ticker-strip--secondary .ticker-item { color: var(--text-secondary); }
+.ticker-dot {
+  width: 4px; height: 4px;
+  border-radius: 50%;
+  flex-shrink: 0; opacity: 0.5;
+}
+.ticker-strip--primary .ticker-dot { background: #FFFFFF; }
+.ticker-strip--secondary .ticker-dot { background: var(--text-muted); }
+@keyframes tickerScroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* ── SECTIONS ── */
+.section { padding: 8rem 0; }
+.section-eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.68rem; font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--accent);
+  margin-bottom: 1.25rem;
+}
+.section-title {
+  font-family: var(--font-display);
+  font-size: clamp(2.2rem, 4vw, 3.2rem);
+  line-height: 1.08;
+  color: var(--text-bright);
+  max-width: 600px;
+  margin-bottom: 1.25rem;
+}
+.section-sub {
+  font-size: 1.05rem;
+  color: var(--text);
+  max-width: 500px;
+  font-weight: 300;
+  line-height: 1.75;
+}
+
+/* ── RESULTS ── */
+.results { padding-bottom: 5rem; }
+.results-header { margin-bottom: 4rem; }
+.results-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+.result-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 2.25rem 2rem;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s var(--ease-out);
+  opacity: 0; transform: translateY(32px);
+}
+.result-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--accent), transparent);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.result-card:hover {
+  border-color: var(--border-hover);
+  transform: translateY(-6px) !important;
+  box-shadow: 0 24px 80px rgba(26, 21, 16, 0.08);
+}
+.result-card:hover::before { opacity: 0.6; }
+
+.results-grid.visible .result-card { opacity: 1; transform: translateY(0); }
+.results-grid .result-card:nth-child(1) { transition-delay: 0s; }
+.results-grid .result-card:nth-child(2) { transition-delay: 0.07s; }
+.results-grid .result-card:nth-child(3) { transition-delay: 0.14s; }
+.results-grid .result-card:nth-child(4) { transition-delay: 0.21s; }
+.results-grid .result-card:nth-child(5) { transition-delay: 0.28s; }
+.results-grid .result-card:nth-child(6) { transition-delay: 0.35s; }
+
+.result-label {
+  font-family: var(--font-mono);
+  font-size: 0.62rem; font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--accent);
+  margin-bottom: 1.25rem;
+}
+.result-metric {
+  font-family: var(--font-mono);
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--text-bright);
+  margin-bottom: 0.75rem;
+}
+.result-unit {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  color: var(--text);
+  font-weight: 400;
+  font-style: italic;
+  margin-left: 0.35em;
+}
+.result-desc {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  font-weight: 300;
+  line-height: 1.7;
+}
+
+/* ── PROCESS ── */
+.process {
+  border-top: 1px solid var(--border);
+  position: relative;
+}
+.process::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 50%;
+  transform: translateX(-50%);
+  width: 600px; height: 1px;
+  background: linear-gradient(90deg, transparent, var(--accent-glow), transparent);
+}
+.process-header { margin-bottom: 4.5rem; max-width: 620px; }
+
+.process-steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 4rem;
+}
+
+.step {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 2.25rem 1.75rem;
+  opacity: 0; transform: translateY(24px);
+  transition: all 0.7s var(--ease-out);
+}
+.step:hover {
+  border-color: var(--border-hover);
+  box-shadow: 0 16px 48px rgba(26, 21, 16, 0.06);
+}
+.process-steps.visible .step { opacity: 1; transform: translateY(0); }
+.process-steps .step:nth-child(1) { transition-delay: 0s; }
+.process-steps .step:nth-child(2) { transition-delay: 0.12s; }
+.process-steps .step:nth-child(3) { transition-delay: 0.24s; }
+
+.step-number {
+  font-family: var(--font-mono);
+  font-size: 0.72rem; font-weight: 700;
+  color: var(--accent);
+  letter-spacing: 0.1em;
+  margin-bottom: 1.5rem;
+  display: flex; align-items: center; gap: 1rem;
+}
+.step-number::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--border);
+}
+.step-title {
+  font-family: var(--font-display);
+  font-size: 1.45rem;
+  color: var(--text-bright);
+  margin-bottom: 0.85rem;
+}
+.step-desc {
+  font-size: 0.9rem;
+  color: var(--text);
+  font-weight: 300;
+  line-height: 1.75;
+}
+
+.process-callout {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 3rem;
+  position: relative;
+  overflow: hidden;
+}
+.process-callout::before {
+  content: '';
+  position: absolute;
+  top: -1px; left: 0; right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--accent), transparent);
+  opacity: 0.3;
+}
+.callout-text p {
+  font-size: 1rem;
+  color: var(--text);
+  font-weight: 300;
+  line-height: 1.75;
+}
+.callout-text p:first-child {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  color: var(--text-bright);
+  margin-bottom: 0.75rem;
+  line-height: 1.3;
+}
+.callout-text em {
+  font-style: italic;
+  font-family: var(--font-display);
+  color: var(--accent);
+  font-size: 1.05em;
+}
+
+/* ── STATS ── */
+.stats-section {
+  padding: 7rem 0;
+  position: relative;
+  overflow: hidden;
+}
+.stats-section::before {
+  content: '';
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: 900px; height: 500px;
+  background:
+    radial-gradient(ellipse 400px 300px at 30% 50%, rgba(232, 85, 58, 0.04), transparent),
+    radial-gradient(ellipse 300px 200px at 70% 40%, rgba(180, 120, 60, 0.03), transparent);
+  filter: blur(60px);
+  pointer-events: none;
+}
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  position: relative; z-index: 1;
+  text-align: center;
+}
+.stat-item {
+  padding: 2.5rem 1rem;
+  opacity: 0; transform: scale(0.85) translateY(20px);
+  transition: all 0.9s var(--ease-out);
+}
+.stats-grid.visible .stat-item { opacity: 1; transform: scale(1) translateY(0); }
+.stats-grid .stat-item:nth-child(1) { transition-delay: 0s; }
+.stats-grid .stat-item:nth-child(2) { transition-delay: 0.12s; }
+.stats-grid .stat-item:nth-child(3) { transition-delay: 0.24s; }
+.stat-number {
+  font-family: var(--font-mono);
+  font-size: clamp(4.5rem, 9vw, 7.5rem);
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 0.75rem;
+  color: var(--text-bright);
+}
+.stat-label {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  font-weight: 400;
+}
+
+/* ── OBJECTIONS ── */
+.objections {
+  border-top: 1px solid var(--border);
+}
+.objections-header { margin-bottom: 3.5rem; }
+.objections-list { max-width: 760px; }
+
+.objection-item {
+  border-bottom: 1px solid var(--border);
+  opacity: 0; transform: translateY(16px);
+  transition: opacity 0.6s var(--ease-out), transform 0.6s var(--ease-out);
+}
+.objections-list.visible .objection-item { opacity: 1; transform: translateY(0); }
+.objections-list .objection-item:nth-child(1) { transition-delay: 0s; }
+.objections-list .objection-item:nth-child(2) { transition-delay: 0.06s; }
+.objections-list .objection-item:nth-child(3) { transition-delay: 0.12s; }
+.objections-list .objection-item:nth-child(4) { transition-delay: 0.18s; }
+.objections-list .objection-item:nth-child(5) { transition-delay: 0.24s; }
+.objections-list .objection-item:nth-child(6) { transition-delay: 0.3s; }
+.objection-header {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 1.4rem 0;
+  cursor: pointer; user-select: none;
+}
+.objection-header:hover .objection-q { color: var(--text-bright); }
+.objection-q {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  font-style: italic;
+  color: var(--text);
+  transition: color 0.3s ease;
+  flex: 1;
+  padding-right: 1rem;
+}
+.objection-toggle {
+  width: 30px; height: 30px;
+  display: flex; align-items: center; justify-content: center;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  flex-shrink: 0;
+  transition: all 0.4s var(--ease-out);
+}
+.objection-toggle svg {
+  width: 12px; height: 12px;
+  stroke: var(--text-secondary);
+  transition: transform 0.4s var(--ease-out), stroke 0.3s ease;
+}
+.objection-item.open .objection-toggle {
+  background: var(--accent-dim);
+  border-color: rgba(232, 85, 58, 0.25);
+}
+.objection-item.open .objection-toggle svg {
+  transform: rotate(45deg);
+  stroke: var(--accent);
+}
+.objection-body {
+  max-height: 0; overflow: hidden;
+  transition: max-height 0.5s var(--ease-out);
+}
+.objection-item.open .objection-body { max-height: 300px; }
+.objection-answer {
+  font-size: 0.95rem;
+  color: var(--text);
+  font-weight: 300;
+  line-height: 1.8;
+  padding-bottom: 1.5rem;
+  max-width: 640px;
+}
+
+/* ── FINAL CTA ── */
+.final-cta {
+  padding: 10rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.final-cta::before {
+  content: '';
+  position: absolute;
+  bottom: 10%; left: 50%;
+  transform: translateX(-50%);
+  width: 700px; height: 500px;
+  background:
+    radial-gradient(ellipse 350px 250px at 40% 50%, rgba(232, 85, 58, 0.05), transparent),
+    radial-gradient(ellipse 250px 200px at 60% 40%, rgba(180, 120, 60, 0.04), transparent);
+  filter: blur(80px);
+  pointer-events: none;
+}
+.final-cta .container { position: relative; z-index: 1; }
+.final-lead {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+.final-headline {
+  font-family: var(--font-display);
+  font-size: clamp(2.4rem, 4.5vw, 3.6rem);
+  line-height: 1.1;
+  color: var(--text-bright);
+  max-width: 700px;
+  margin: 0 auto 1.5rem;
+}
+.final-headline em {
+  font-style: italic;
+  color: var(--accent);
+}
+.final-sub {
+  font-size: 1rem;
+  color: var(--text);
+  font-weight: 300;
+  max-width: 460px;
+  margin: 0 auto 3rem;
+  line-height: 1.75;
+}
+.final-cta .btn-primary {
+  font-size: 1.05rem;
+  padding: 1.1rem 2.5rem;
+}
+
+/* ── FOOTER ── */
+footer {
+  border-top: 1px solid var(--border);
+  padding: 4.5rem 0 3rem;
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  gap: 3rem;
+}
+.footer-brand-name {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  color: var(--text-bright);
+  margin-bottom: 0.35rem;
+}
+.footer-brand-title {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+}
+.footer-heading {
+  font-family: var(--font-mono);
+  font-size: 0.62rem; font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--text-muted);
+  margin-bottom: 1.25rem;
+}
+.footer-links { list-style: none; }
+.footer-links li { margin-bottom: 0.6rem; }
+.footer-links a {
+  font-size: 0.85rem;
+  color: var(--text);
+  transition: color 0.3s ease;
+}
+.footer-links a:hover { color: var(--accent); }
+.footer-bottom {
+  margin-top: 3.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-copy { font-size: 0.75rem; color: var(--text-muted); }
+
+/* ── REVEAL ── */
+.reveal {
+  opacity: 0; transform: translateY(32px);
+  transition: opacity 0.8s var(--ease-out), transform 0.8s var(--ease-out);
+}
+.reveal.visible { opacity: 1; transform: translateY(0); }
+
+/* ── RESPONSIVE ── */
+@media (max-width: 1024px) {
+  .hero-split { grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+  .hero-tap { min-height: 480px; }
+  .tap-svg { width: 130px; }
+  .tap-stream-wrap { top: 190px; }
+  .tap-pills { top: 250px; width: 260px; }
+  .tap-pill { font-size: 0.62rem; padding: 0.35rem 0.75rem; }
+  .results-grid { grid-template-columns: repeat(2, 1fr); }
+  .process-steps { grid-template-columns: repeat(2, 1fr); }
+  .footer-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 768px) {
+  .section { padding: 5.5rem 0; }
+  .hero { padding: 7rem 0 4rem; min-height: auto; }
+  .hero-split { grid-template-columns: 1fr; }
+  .hero-tap { min-height: 420px; order: -1; }
+  .tap-svg { width: 110px; }
+  .tap-stream-wrap { top: 170px; height: 200px; }
+  .tap-stream { max-height: 180px !important; }
+  .tap-pills { top: 230px; width: 270px; }
+  .hero h1 { font-size: 2.6rem; }
+  .hero-proof { gap: 1.5rem; }
+  .proof-divider { display: none; }
+  .results-grid { grid-template-columns: 1fr; }
+  .process-steps { grid-template-columns: 1fr; gap: 1.25rem; }
+  .stats-grid { grid-template-columns: 1fr; gap: 2rem; }
+  .stat-number { font-size: 4.5rem; }
+  .footer-grid { grid-template-columns: 1fr 1fr; gap: 2rem; }
+  .nav-links a:not(.nav-cta) { display: none; }
+  .ticker-item { font-size: 0.65rem; }
+}
+@media (max-width: 480px) {
+  .container { padding: 0 1.25rem; }
+  .hero-tap { min-height: 360px; }
+  .tap-svg { width: 85px; }
+  .tap-stream-wrap { top: 140px; height: 170px; }
+  .tap-stream { max-height: 150px !important; }
+  .tap-pills { top: 190px; width: 230px; }
+  .tap-pill { font-size: 0.58rem; padding: 0.3rem 0.6rem; }
+  .hero h1 { font-size: 2.1rem; }
+  .hero-sub { font-size: 1rem; }
+  .hero-ctas { flex-direction: column; align-items: flex-start; }
+  .hero-proof { flex-direction: column; gap: 1rem; align-items: flex-start; }
+  .result-metric { font-size: 2.2rem; }
+  .footer-grid { grid-template-columns: 1fr; }
+  .footer-bottom { flex-direction: column; gap: 0.75rem; text-align: center; }
+}
+</style>
+</head>
+<body>
+
+<!-- Cursor -->
+<div class="cursor"></div>
+
+<!-- Grain -->
+<div class="grain">
+  <svg><filter id="n"><feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="4" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/></filter><rect width="100%" height="100%" filter="url(#n)"/></svg>
+</div>
+
+<!-- Nav -->
+<nav>
+  <div class="container">
+    <a href="#" class="nav-logo">Draft</a>
+    <div class="nav-links">
+      <a href="#results">Results</a>
+      <a href="#process">How it works</a>
+      <a href="#faq">FAQ</a>
+      <a href="#" class="nav-cta">Book a call</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="hero-mesh">
+    <div class="hero-orb"></div>
+    <div class="hero-orb"></div>
+    <div class="hero-orb"></div>
+  </div>
+  <div class="hero-grid"></div>
+  <div class="container">
+    <div class="hero-split">
+      <div class="hero-content">
+        <div class="hero-badge">For B2B SaaS CEOs selling $30K+ ACV deals</div>
+        <h1>
+          <span class="hero-line">You don't need <span class="dim">more likes.</span></span>
+          <span class="hero-line">You need <span class="pop">15 demos</span> from one post.</span>
+        </h1>
+        <p class="hero-sub">
+          One LinkedIn post. 15 demos booked. That's what happens when your CEO's content is engineered for <em>pipeline</em>, not applause.
+        </p>
+        <div class="hero-ctas">
+          <a href="#" class="btn btn-primary">Book a pipeline call <span class="btn-arrow">&rarr;</span></a>
+          <a href="#results" class="btn btn-ghost">See the results</a>
+        </div>
+        <div class="hero-proof">
+          <div class="proof-item">
+            <span class="proof-number">15</span>
+            <span class="proof-label">demos from one post</span>
+          </div>
+          <div class="proof-divider"></div>
+          <div class="proof-item">
+            <span class="proof-number">623</span>
+            <span class="proof-label">webinar signups</span>
+          </div>
+          <div class="proof-divider"></div>
+          <div class="proof-item">
+            <span class="proof-number">200+</span>
+            <span class="proof-label">product signups per post</span>
+          </div>
+        </div>
+        <p class="hero-note">Currently writing for B2B SaaS CEOs across fintech, dev tools, and HR tech.</p>
+      </div>
+
+      <!-- Draft Tap Illustration -->
+      <div class="hero-tap">
+        <div class="tap-glow"></div>
+        <svg class="tap-svg" viewBox="0 0 240 340" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <!-- Metallic gradient for chrome/dark metal -->
+            <linearGradient id="chrome" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0%" stop-color="#2A231C"/>
+              <stop offset="25%" stop-color="#4A4038"/>
+              <stop offset="50%" stop-color="#5C5248"/>
+              <stop offset="75%" stop-color="#3A3028"/>
+              <stop offset="100%" stop-color="#1A1510"/>
+            </linearGradient>
+            <!-- Handle side lighting -->
+            <linearGradient id="handleLR" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0%" stop-color="rgba(0,0,0,0.12)"/>
+              <stop offset="35%" stop-color="rgba(0,0,0,0)"/>
+              <stop offset="65%" stop-color="rgba(255,255,255,0.05)"/>
+              <stop offset="100%" stop-color="rgba(0,0,0,0.18)"/>
+            </linearGradient>
+            <!-- Handle top-bottom light -->
+            <linearGradient id="handleTB" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="rgba(255,255,255,0.1)"/>
+              <stop offset="100%" stop-color="rgba(0,0,0,0.08)"/>
+            </linearGradient>
+            <!-- Subtle shadow filter -->
+            <filter id="tapShadow" x="-20%" y="-10%" width="140%" height="130%">
+              <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="rgba(26,21,16,0.15)"/>
+            </filter>
+          </defs>
+
+          <!-- Wall mount plate -->
+          <rect x="60" y="4" width="120" height="34" rx="6" fill="#1A1510" filter="url(#tapShadow)"/>
+          <rect x="64" y="7" width="112" height="28" rx="5" fill="url(#chrome)"/>
+          <rect x="68" y="10" width="104" height="22" rx="4" fill="#2A231C" stroke="#3A3028" stroke-width="0.5"/>
+          <circle cx="82" cy="21" r="5" fill="#3A3028" stroke="#4A4038" stroke-width="0.5"/>
+          <circle cx="82" cy="21" r="2" fill="#2A231C"/>
+          <circle cx="158" cy="21" r="5" fill="#3A3028" stroke="#4A4038" stroke-width="0.5"/>
+          <circle cx="158" cy="21" r="2" fill="#2A231C"/>
+
+          <!-- Vertical pipe -->
+          <rect x="106" y="38" width="28" height="48" rx="5" fill="url(#chrome)"/>
+          <rect x="110" y="40" width="5" height="44" rx="2.5" fill="rgba(255,255,255,0.05)"/>
+
+          <!-- Collar ring -->
+          <ellipse cx="120" cy="88" rx="32" ry="11" fill="#1A1510"/>
+          <ellipse cx="120" cy="86" rx="29" ry="9" fill="#2A231C" stroke="#3A3028" stroke-width="0.5"/>
+          <ellipse cx="120" cy="84" rx="22" ry="5" fill="#3A3028"/>
+          <ellipse cx="112" cy="84" rx="8" ry="2" fill="rgba(255,255,255,0.06)"/>
+
+          <!-- Handle group (animated) -->
+          <g class="tap-handle-group">
+            <ellipse cx="122" cy="242" rx="30" ry="8" fill="rgba(26,21,16,0.1)"/>
+            <rect x="86" y="96" width="68" height="148" rx="34" fill="#E8553A"/>
+            <rect x="86" y="96" width="68" height="148" rx="34" fill="url(#handleLR)"/>
+            <rect x="86" y="96" width="68" height="148" rx="34" fill="url(#handleTB)"/>
+            <ellipse cx="120" cy="100" rx="30" ry="12" fill="#C93D20"/>
+            <ellipse cx="120" cy="98" rx="27" ry="10" fill="#D44425"/>
+            <ellipse cx="120" cy="96" rx="24" ry="8" fill="#E8553A"/>
+            <ellipse cx="120" cy="95" rx="16" ry="4" fill="rgba(255,255,255,0.08)"/>
+            <ellipse cx="120" cy="240" rx="30" ry="12" fill="#B83520"/>
+            <ellipse cx="120" cy="238" rx="27" ry="10" fill="#C93D20"/>
+            <rect x="97" y="110" width="10" height="120" rx="5" fill="rgba(255,255,255,0.1)"/>
+            <rect x="100" y="115" width="4" height="100" rx="2" fill="rgba(255,255,255,0.06)"/>
+            <text x="120" y="178" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700" letter-spacing="4" fill="rgba(255,255,255,0.2)">DRAFT</text>
+            <text x="120" y="179" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700" letter-spacing="4" fill="rgba(0,0,0,0.15)">DRAFT</text>
+          </g>
+
+          <!-- Connector -->
+          <rect x="106" y="250" width="28" height="20" rx="5" fill="url(#chrome)"/>
+          <rect x="110" y="252" width="5" height="16" rx="2.5" fill="rgba(255,255,255,0.04)"/>
+
+          <!-- Faucet body -->
+          <rect x="94" y="270" width="52" height="30" rx="10" fill="#1A1510" filter="url(#tapShadow)"/>
+          <rect x="98" y="273" width="44" height="24" rx="8" fill="url(#chrome)"/>
+          <rect x="104" y="276" width="6" height="18" rx="3" fill="rgba(255,255,255,0.04)"/>
+          <line x1="118" y1="276" x2="118" y2="294" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+
+          <!-- Spout nozzle -->
+          <rect x="108" y="300" width="24" height="14" rx="5" fill="#1A1510"/>
+          <ellipse cx="120" cy="316" rx="14" ry="6" fill="#1A1510"/>
+          <ellipse cx="120" cy="315" rx="10" ry="4" fill="#2A231C"/>
+          <ellipse cx="120" cy="314" rx="6" ry="2" fill="#3A3028"/>
+
+          <!-- Drip forming at spout tip -->
+          <ellipse class="tap-drip" cx="120" cy="324" rx="4" ry="0" fill="#E8553A" opacity="0"/>
+        </svg>
+
+        <!-- Multi-layer stream -->
+        <div class="tap-stream-wrap">
+          <div class="tap-stream">
+            <div class="tap-splash"></div>
+          </div>
+        </div>
+
+        <!-- Metric pills cascading out -->
+        <div class="tap-pills">
+          <div class="tap-pill featured"><span class="pill-num">15</span> demos booked</div>
+          <div class="tap-pill"><span class="pill-num">623</span> signups</div>
+          <div class="tap-pill"><span class="pill-num">$0</span> ad spend</div>
+          <div class="tap-pill featured"><span class="pill-num">200+</span> product signups</div>
+          <div class="tap-pill"><span class="pill-num">1,500</span> comments</div>
+          <div class="tap-pill"><span class="pill-num">500</span> in 48h</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Dual Ticker -->
+<div class="ticker-wrapper">
+  <div class="ticker-strip ticker-strip--primary">
+    <div class="ticker-track">
+      <div class="ticker-content">
+        <span class="ticker-item">15 demos from one post</span><span class="ticker-dot"></span>
+        <span class="ticker-item">623 webinar signups</span><span class="ticker-dot"></span>
+        <span class="ticker-item">200+ product signups</span><span class="ticker-dot"></span>
+        <span class="ticker-item">1,500 comments</span><span class="ticker-dot"></span>
+        <span class="ticker-item">$0 ad spend</span><span class="ticker-dot"></span>
+        <span class="ticker-item">125&times; more pipeline</span><span class="ticker-dot"></span>
+        <span class="ticker-item">500 registrations in 48h</span><span class="ticker-dot"></span>
+      </div>
+      <div class="ticker-content" aria-hidden="true">
+        <span class="ticker-item">15 demos from one post</span><span class="ticker-dot"></span>
+        <span class="ticker-item">623 webinar signups</span><span class="ticker-dot"></span>
+        <span class="ticker-item">200+ product signups</span><span class="ticker-dot"></span>
+        <span class="ticker-item">1,500 comments</span><span class="ticker-dot"></span>
+        <span class="ticker-item">$0 ad spend</span><span class="ticker-dot"></span>
+        <span class="ticker-item">125&times; more pipeline</span><span class="ticker-dot"></span>
+        <span class="ticker-item">500 registrations in 48h</span><span class="ticker-dot"></span>
+      </div>
+    </div>
+  </div>
+  <div class="ticker-strip ticker-strip--secondary">
+    <div class="ticker-track">
+      <div class="ticker-content">
+        <span class="ticker-item">Pipeline not impressions</span><span class="ticker-dot"></span>
+        <span class="ticker-item">Owned channel</span><span class="ticker-dot"></span>
+        <span class="ticker-item">Compounds over time</span><span class="ticker-dot"></span>
+        <span class="ticker-item">Founder-led content</span><span class="ticker-dot"></span>
+        <span class="ticker-item">Measured in revenue</span><span class="ticker-dot"></span>
+        <span class="ticker-item">Zero ad spend</span><span class="ticker-dot"></span>
+      </div>
+      <div class="ticker-content" aria-hidden="true">
+        <span class="ticker-item">Pipeline not impressions</span><span class="ticker-dot"></span>
+        <span class="ticker-item">Owned channel</span><span class="ticker-dot"></span>
+        <span class="ticker-item">Compounds over time</span><span class="ticker-dot"></span>
+        <span class="ticker-item">Founder-led content</span><span class="ticker-dot"></span>
+        <span class="ticker-item">Measured in revenue</span><span class="ticker-dot"></span>
+        <span class="ticker-item">Zero ad spend</span><span class="ticker-dot"></span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Results -->
+<section class="results section" id="results">
+  <div class="container">
+    <div class="results-header reveal">
+      <div class="section-eyebrow">Proven outcomes</div>
+      <h2 class="section-title">One post. Multiple pipeline outcomes.</h2>
+      <p class="section-sub">Every post is engineered to drive a specific business result. Not impressions. Not followers. Pipeline.</p>
+    </div>
+    <div class="results-grid">
+      <div class="result-card">
+        <span class="result-label">Demo driver</span>
+        <div class="result-metric">15<span class="result-unit">demos</span></div>
+        <p class="result-desc">One post. 15 demos booked directly from LinkedIn. Real post, real pipeline.</p>
+      </div>
+      <div class="result-card">
+        <span class="result-label">Webinar fill</span>
+        <div class="result-metric">623<span class="result-unit">signups</span></div>
+        <p class="result-desc">Fill a webinar with 623 signups from a single CEO post. No ads required.</p>
+      </div>
+      <div class="result-card">
+        <span class="result-label">PLG signups</span>
+        <div class="result-metric">200+<span class="result-unit">signups</span></div>
+        <p class="result-desc">Drive 200+ product signups from one piece of CEO content that compounds.</p>
+      </div>
+      <div class="result-card">
+        <span class="result-label">Category authority</span>
+        <div class="result-metric">1,500<span class="result-unit">comments</span></div>
+        <p class="result-desc">Every buyer in your market noticed. Category ownership earned with one post.</p>
+      </div>
+      <div class="result-card">
+        <span class="result-label">Product insight</span>
+        <div class="result-metric">200<span class="result-unit">signups</span></div>
+        <p class="result-desc">Turn one product insight into 200 signups. Founder knowledge converted to pipeline.</p>
+      </div>
+      <div class="result-card">
+        <span class="result-label">Webinar drive</span>
+        <div class="result-metric">500<span class="result-unit">in 48h</span></div>
+        <p class="result-desc">500 registrations. One post. 48 hours. No paid distribution needed.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Process -->
+<section class="process section" id="process">
+  <div class="container">
+    <div class="process-header reveal">
+      <div class="section-eyebrow">How it works</div>
+      <h2 class="section-title">Three steps. One pipeline channel that compounds.</h2>
+      <p class="section-sub">Ads stop working the moment you stop paying. Every post I write builds on the last. Your CEO's authority grows. Your pipeline grows with it.</p>
+    </div>
+    <div class="process-steps">
+      <div class="step">
+        <div class="step-number">01</div>
+        <h3 class="step-title">Extract the insight</h3>
+        <p class="step-desc">I interview you for 30 minutes each month. I pull out the founder-level insights your buyers actually care about. The takes only a CEO can make. The stories only you can tell.</p>
+      </div>
+      <div class="step">
+        <div class="step-number">02</div>
+        <h3 class="step-title">Engineer the post for pipeline</h3>
+        <p class="step-desc">Every post is built around a specific business outcome: demos, signups, or webinar fills. I write the hook, the narrative, and the call-to-action. You approve it. I publish it.</p>
+      </div>
+      <div class="step">
+        <div class="step-number">03</div>
+        <h3 class="step-title">Measure what matters</h3>
+        <p class="step-desc">After every post, I report on pipeline created. Demos booked. Signups captured. Revenue attributed. You know exactly what your LinkedIn is worth in dollars, not likes.</p>
+      </div>
+    </div>
+    <div class="process-callout reveal">
+      <div class="callout-text">
+        <p>Ads stop the moment you stop paying. <em>This compounds.</em></p>
+        <p>Every post tracked to pipeline. Demos booked, signups captured, revenue attributed. Post 50 builds on the audience post 1 created.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Stats -->
+<section class="stats-section">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-item">
+        <div class="stat-number"><span class="counter" data-target="125" data-suffix="&times;">0</span></div>
+        <div class="stat-label">more pipeline than cold outreach</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number"><span class="counter" data-target="15">0</span></div>
+        <div class="stat-label">demos from one post</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number"><span class="counter" data-target="623">0</span></div>
+        <div class="stat-label">webinar signups per post</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Objections -->
+<section class="objections section" id="faq">
+  <div class="container">
+    <div class="objections-header reveal">
+      <div class="section-eyebrow">Why this works</div>
+      <h2 class="section-title">You've probably tried other approaches.</h2>
+      <p class="section-sub">Here's why they didn't work.</p>
+    </div>
+    <div class="objections-list">
+      <div class="objection-item">
+        <div class="objection-header">
+          <span class="objection-q">"I'll just post myself when I have time."</span>
+          <div class="objection-toggle"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
+        </div>
+        <div class="objection-body">
+          <p class="objection-answer">You don't have time. And even when you do, one post a month doesn't build momentum. The LinkedIn algorithm rewards consistency. Three to five posts per week, every week, compounding. That's the job.</p>
+        </div>
+      </div>
+      <div class="objection-item">
+        <div class="objection-header">
+          <span class="objection-q">"We already have a content marketer."</span>
+          <div class="objection-toggle"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
+        </div>
+        <div class="objection-body">
+          <p class="objection-answer">Great for blog posts and SEO. But your content marketer can't post as the CEO. Founder-led content performs differently because buyers trust people, not brands. Your marketer can't fake your voice or your authority.</p>
+        </div>
+      </div>
+      <div class="objection-item">
+        <div class="objection-header">
+          <span class="objection-q">"We tried a ghostwriter before. It didn't work."</span>
+          <div class="objection-toggle"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
+        </div>
+        <div class="objection-body">
+          <p class="objection-answer">Most ghostwriters optimize for engagement. Likes, comments, follower growth. That's the wrong target. I optimize for pipeline. Every post has a business outcome attached before I write a single word.</p>
+        </div>
+      </div>
+      <div class="objection-item">
+        <div class="objection-header">
+          <span class="objection-q">"LinkedIn ads would be more predictable."</span>
+          <div class="objection-toggle"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
+        </div>
+        <div class="objection-body">
+          <p class="objection-answer">LinkedIn ads cost $50-100 per click. One organic post that books 15 demos costs you nothing in ad spend. And unlike ads, organic authority compounds. Post 50 builds on the audience post 1 created. Ads give you rented attention. This gives you an owned channel.</p>
+        </div>
+      </div>
+      <div class="objection-item">
+        <div class="objection-header">
+          <span class="objection-q">"Can't AI do this now?"</span>
+          <div class="objection-toggle"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
+        </div>
+        <div class="objection-body">
+          <p class="objection-answer">AI can write a post. It can't extract the founder-level insight that makes buyers stop scrolling. It can't read the market and know which angle will drive demos this week versus next. And your audience can smell AI-generated content. That's the fastest way to destroy a CEO's credibility on the platform.</p>
+        </div>
+      </div>
+      <div class="objection-item">
+        <div class="objection-header">
+          <span class="objection-q">"We're focused on outbound right now."</span>
+          <div class="objection-toggle"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
+        </div>
+        <div class="objection-body">
+          <p class="objection-answer">Outbound works better when your CEO has a presence. Every cold email your SDRs send, the prospect checks LinkedIn first. If your CEO's profile has nothing — or worse, generic corporate content — you've already lost trust before the call. This makes every other channel more effective.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Final CTA -->
+<section class="final-cta">
+  <div class="container">
+    <div class="reveal">
+      <p class="final-lead">Your competitors are spending $50K/mo on ads that get ignored.</p>
+      <h2 class="final-headline">One LinkedIn post per week.<br>Measured in <em>demos, signups, and pipeline.</em><br>Not impressions.</h2>
+      <p class="final-sub">Every post tracked to pipeline. Every dollar attributed. One channel that compounds while everything else decays.</p>
+      <a href="#" class="btn btn-primary">Book a pipeline call <span class="btn-arrow">&rarr;</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand-name">Draft</div>
+      </div>
+      <div>
+        <div class="footer-heading">What I do</div>
+        <ul class="footer-links">
+          <li><a href="#">Demo driver posts</a></li>
+          <li><a href="#">Webinar fill posts</a></li>
+          <li><a href="#">PLG signup posts</a></li>
+          <li><a href="#">Authority content</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-heading">Results</div>
+        <ul class="footer-links">
+          <li><a href="#">15 demos per post</a></li>
+          <li><a href="#">500+ webinar signups</a></li>
+          <li><a href="#">200 product signups</a></li>
+          <li><a href="#">Inbound leads from every post</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-heading">Connect</div>
+        <ul class="footer-links">
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="#">X / Twitter</a></li>
+          <li><a href="mailto:colby@draftrev.com">Email</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-copy">&copy; 2026 Draft. All rights reserved.</span>
+      <span class="footer-copy">Engineered for pipeline.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function() {
+  // Custom cursor
+  const cursor = document.querySelector('.cursor');
+  let mouseX = 0, mouseY = 0, cx = 0, cy = 0;
+  document.addEventListener('mousemove', e => { mouseX = e.clientX; mouseY = e.clientY; });
+  function updateCursor() {
+    cx += (mouseX - cx) * 0.12;
+    cy += (mouseY - cy) * 0.12;
+    cursor.style.left = cx + 'px';
+    cursor.style.top = cy + 'px';
+    requestAnimationFrame(updateCursor);
+  }
+  updateCursor();
+  document.querySelectorAll('a, button, .objection-header, .btn').forEach(el => {
+    el.addEventListener('mouseenter', () => cursor.classList.add('hover'));
+    el.addEventListener('mouseleave', () => cursor.classList.remove('hover'));
+  });
+
+  // Scroll reveal
+  const revealObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -30px 0px' });
+  document.querySelectorAll('.reveal, .results-grid, .process-steps, .stats-grid, .objections-list').forEach(el => {
+    revealObserver.observe(el);
+  });
+
+  // Counter animation
+  function animateCounter(el) {
+    const target = parseInt(el.dataset.target);
+    const suffix = el.dataset.suffix || '';
+    const duration = 2400;
+    const start = performance.now();
+    function update(now) {
+      const elapsed = now - start;
+      const progress = Math.min(elapsed / duration, 1);
+      const eased = 1 - Math.pow(1 - progress, 4);
+      el.innerHTML = Math.floor(eased * target).toLocaleString() + suffix;
+      if (progress < 1) requestAnimationFrame(update);
+    }
+    requestAnimationFrame(update);
+  }
+  const counterObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.querySelectorAll('.counter').forEach(animateCounter);
+        counterObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.35 });
+  document.querySelectorAll('.stats-grid').forEach(el => counterObserver.observe(el));
+
+  // Accordion
+  document.querySelectorAll('.objection-header').forEach(header => {
+    header.addEventListener('click', () => {
+      const item = header.parentElement;
+      const wasOpen = item.classList.contains('open');
+      document.querySelectorAll('.objection-item.open').forEach(i => i.classList.remove('open'));
+      if (!wasOpen) item.classList.add('open');
+    });
+  });
+
+  // Nav
+  const nav = document.querySelector('nav');
+  let ticking = false;
+  window.addEventListener('scroll', () => {
+    if (!ticking) {
+      requestAnimationFrame(() => {
+        nav.classList.toggle('scrolled', window.scrollY > 80);
+        ticking = false;
+      });
+      ticking = true;
+    }
+  });
+
+  // Pill float after entrance
+  setTimeout(() => {
+    document.querySelectorAll('.tap-pill').forEach(pill => {
+      pill.classList.add('floating');
+    });
+  }, 4200);
+
+  // Smooth anchors
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', function(e) {
+      const id = this.getAttribute('href');
+      if (id === '#') return;
+      const t = document.querySelector(id);
+      if (t) { e.preventDefault(); t.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+    });
+  });
+})();
+</script>
+</body>
+</html>
