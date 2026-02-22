@@ -73,12 +73,11 @@ button { cursor: none; }
   position: fixed; top: 0; left: 0;
   pointer-events: none; z-index: 10001;
   transition: width 0.35s var(--ease-spring), height 0.35s var(--ease-spring),
-              margin 0.35s var(--ease-spring), border-color 0.3s ease, background 0.3s ease;
-  margin: -7px 0 0 -7px;
+              border-color 0.3s ease, background 0.3s ease;
+  will-change: transform;
 }
 .cursor.hover {
   width: 48px; height: 48px;
-  margin: -24px 0 0 -24px;
   background: rgba(232, 85, 58, 0.08);
   border-color: rgba(232, 85, 58, 0.5);
 }
@@ -92,8 +91,9 @@ button { cursor: none; }
   position: fixed; inset: 0;
   pointer-events: none; z-index: 9999;
   opacity: 0.04; mix-blend-mode: multiply;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-size: 200px 200px;
 }
-.grain svg { width: 100%; height: 100%; }
 
 /* ── NAV ── */
 nav {
@@ -148,25 +148,23 @@ nav .container { display: flex; align-items: center; justify-content: space-betw
 .hero-orb {
   position: absolute;
   border-radius: 50%;
-  filter: blur(100px);
-  will-change: transform;
 }
 .hero-orb:nth-child(1) {
   width: 55%; height: 55%;
   top: 5%; left: 5%;
-  background: rgba(232, 85, 58, 0.06);
+  background: radial-gradient(circle, rgba(232, 85, 58, 0.06) 0%, transparent 70%);
   animation: float1 22s ease-in-out infinite;
 }
 .hero-orb:nth-child(2) {
   width: 45%; height: 45%;
   top: 20%; right: -5%;
-  background: rgba(180, 120, 60, 0.05);
+  background: radial-gradient(circle, rgba(180, 120, 60, 0.05) 0%, transparent 70%);
   animation: float2 28s ease-in-out infinite;
 }
 .hero-orb:nth-child(3) {
   width: 40%; height: 40%;
   bottom: 5%; left: 25%;
-  background: rgba(200, 160, 90, 0.04);
+  background: radial-gradient(circle, rgba(200, 160, 90, 0.04) 0%, transparent 70%);
   animation: float3 25s ease-in-out infinite;
 }
 @keyframes float1 {
@@ -347,8 +345,6 @@ nav .container { display: flex; align-items: center; justify-content: space-betw
   white-space: nowrap;
   opacity: 0;
   box-shadow: 0 4px 24px rgba(26, 21, 16, 0.06), 0 1px 3px rgba(26, 21, 16, 0.04);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
 }
 .tap-pill .pill-num {
   color: var(--accent);
@@ -1105,9 +1101,7 @@ footer {
 <div class="cursor"></div>
 
 <!-- Grain -->
-<div class="grain">
-  <svg><filter id="n"><feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="4" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/></filter><rect width="100%" height="100%" filter="url(#n)"/></svg>
-</div>
+<div class="grain"></div>
 
 <!-- Nav -->
 <nav>
@@ -1538,18 +1532,21 @@ footer {
 
 <script>
 (function() {
-  // Custom cursor
+  // Custom cursor (GPU-accelerated)
   const cursor = document.querySelector('.cursor');
-  let mouseX = 0, mouseY = 0, cx = 0, cy = 0;
-  document.addEventListener('mousemove', e => { mouseX = e.clientX; mouseY = e.clientY; });
+  let mouseX = 0, mouseY = 0, cx = 0, cy = 0, rafId = 0, moving = false;
+  document.addEventListener('mousemove', e => {
+    mouseX = e.clientX; mouseY = e.clientY;
+    if (!moving) { moving = true; updateCursor(); }
+  });
   function updateCursor() {
-    cx += (mouseX - cx) * 0.12;
-    cy += (mouseY - cy) * 0.12;
-    cursor.style.left = cx + 'px';
-    cursor.style.top = cy + 'px';
-    requestAnimationFrame(updateCursor);
+    cx += (mouseX - cx) * 0.15;
+    cy += (mouseY - cy) * 0.15;
+    cursor.style.transform = `translate(${cx}px, ${cy}px) translate(-50%, -50%)`;
+    if (Math.abs(mouseX - cx) > 0.5 || Math.abs(mouseY - cy) > 0.5) {
+      rafId = requestAnimationFrame(updateCursor);
+    } else { moving = false; }
   }
-  updateCursor();
   document.querySelectorAll('a, button, .objection-header, .btn').forEach(el => {
     el.addEventListener('mouseenter', () => cursor.classList.add('hover'));
     el.addEventListener('mouseleave', () => cursor.classList.remove('hover'));
