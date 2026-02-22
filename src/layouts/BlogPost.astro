@@ -9,14 +9,14 @@ const formattedUpdate = updatedDate ? new Date(updatedDate).toLocaleDateString('
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>{title} — Draft</title>
+<title>{title} | Draft</title>
 <meta name="description" content={description}>
-<meta property="og:title" content={`${title} — Draft`}>
+<meta property="og:title" content={`${title} | Draft`}>
 <meta property="og:description" content={description}>
 <meta property="og:url" content={Astro.url.href}>
 <meta property="og:type" content="article">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content={`${title} — Draft`}>
+<meta name="twitter:title" content={`${title} | Draft`}>
 <meta name="twitter:description" content={description}>
 {keywords && <meta name="keywords" content={keywords.join(', ')}>}
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
