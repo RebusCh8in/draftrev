@@ -16,8 +16,57 @@ const posts = (await getCollection('blog')).sort(
 <meta property="og:title" content="Blog | Draft">
 <meta property="og:description" content="Insights on LinkedIn ghostwriting, pipeline generation, and founder-led content strategy for B2B SaaS CEOs.">
 <meta property="og:url" content="https://draftrev.com/blog">
+<meta property="og:image" content="https://draftrev.com/og-default.svg">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Blog | Draft">
+<meta name="twitter:description" content="Insights on LinkedIn ghostwriting, pipeline generation, and founder-led content strategy for B2B SaaS CEOs.">
+<meta name="twitter:image" content="https://draftrev.com/og-default.svg">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="canonical" href="https://draftrev.com/blog">
+<script type="application/ld+json" set:html={JSON.stringify({
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "CollectionPage",
+      "@id": "https://draftrev.com/blog/#collectionpage",
+      "name": "Blog | Draft",
+      "description": "Insights on LinkedIn ghostwriting, pipeline generation, and founder-led content strategy for B2B SaaS CEOs.",
+      "url": "https://draftrev.com/blog/",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://draftrev.com/#website"
+      },
+      "about": {
+        "@type": "Blog",
+        "@id": "https://draftrev.com/blog/#blog",
+        "name": "Draft Blog",
+        "url": "https://draftrev.com/blog/",
+        "publisher": {
+          "@type": "Organization",
+          "@id": "https://draftrev.com/#organization"
+        }
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://draftrev.com/blog/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://draftrev.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog"
+        }
+      ]
+    }
+  ]
+})} />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">

@@ -60,9 +60,9 @@ Be honest with yourself about these:
 
 If you've decided it makes sense, here's how to evaluate ghostwriters:
 
-**Do they understand your industry?** A ghostwriter who's written for B2B SaaS CEOs will ramp up in days. A generalist who's written for fitness coaches and real estate agents will take months and still miss the nuance. Ask them about ACV, pipeline metrics, and sales cycles. If they don't know what those words mean, keep looking.
+**Do they understand your industry?** A ghostwriter who's written for B2B SaaS CEOs will ramp up in days. (Here's a deeper look at [what a LinkedIn ghostwriter actually does](/blog/linkedin-ghostwriting-for-saas-ceos/).) A generalist who's written for fitness coaches and real estate agents will take months and still miss the nuance. Ask them about ACV, pipeline metrics, and sales cycles. If they don't know what those words mean, keep looking.
 
-**Can they show pipeline results?** Not impressions. Not follower growth. Actual pipeline. Posts that booked demos. Content that shortened sales cycles. If a ghostwriter can only show you engagement metrics, they're optimizing for the wrong thing.
+**Can they show pipeline results?** Not impressions. Not follower growth. Actual pipeline. Posts that [booked demos](/blog/how-to-book-demos-from-linkedin/). Content that shortened sales cycles. If a ghostwriter can only show you engagement metrics, they're optimizing for the wrong thing.
 
 **Do their samples sound like real people?** Read their portfolio. Does each client sound different? Or does every post have the same generic, polished tone? A good ghostwriter is a chameleon. A bad one has one voice that they paste onto every client.
 
@@ -91,7 +91,7 @@ Hire a ghostwriter if: you're a B2B SaaS CEO selling $30K+ ACV, you know LinkedI
 
 Don't hire one if: you're pre-PMF, you can't commit 30 minutes a week, or you're looking for a full-service content agency.
 
-And when you do hire one, judge them by the only metric that matters: did your pipeline grow?
+And when you do hire one, judge them by the only metric that matters: did your pipeline grow? (Not sure how to track that? Read our [LinkedIn ROI measurement framework](/blog/how-to-measure-linkedin-roi-b2b-saas/).)
 
 ---
 

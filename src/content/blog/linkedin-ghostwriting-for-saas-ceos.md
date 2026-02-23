@@ -26,7 +26,7 @@ But there's a catch: **it only works if you show up consistently.**
 
 One post a quarter doesn't build trust. A sporadic burst followed by months of silence doesn't build a following. The founders winning on LinkedIn are showing up every single week with something worth reading.
 
-But here's what most people get wrong: they think more posts = more pipeline. It doesn't. One high-quality post per week that makes your ICP stop scrolling is worth more than five forgettable ones. The problem is that *one great post* is harder to write than five mediocre ones.
+But here's what most people get wrong: they think more posts = more pipeline. It doesn't. One high-quality post per week that makes your ICP stop scrolling is worth more than five forgettable ones. The problem is that *one great post* is harder to write than five mediocre ones. (If you're stuck in the impressions trap, read [why impressions don't equal pipeline](/blog/linkedin-impressions-vs-pipeline/).)
 
 ## What a LinkedIn ghostwriter actually does
 
@@ -49,7 +49,7 @@ Founder-led content consistently outperforms brand content on LinkedIn by 5-10x 
 
 ## The pipeline math
 
-One post per week doesn't sound like much. But watch what happens when every post is engineered to resonate:
+One post per week doesn't sound like much. But watch what happens when every post is [engineered to book demos](/blog/how-to-book-demos-from-linkedin/):
 
 - **1 post per week** = 4 per month, each one crafted to stop your ICP mid-scroll
 - Average reach for a single high-quality CEO post: **20,000 to 100,000 impressions**
@@ -65,8 +65,8 @@ Not all ghostwriters are created equal. For B2B SaaS specifically, you want:
 
 - **Industry understanding.** They need to know SaaS metrics, buyer personas, and the competitive landscape. Generic marketing writers won't cut it.
 - **Voice fidelity.** Read their work. Does it sound like a real founder, or does it sound like AI-generated content?
-- **Pipeline focus.** Pretty impressions are nice. Pipeline is better. Your ghostwriter should be obsessed with turning attention into revenue.
-- **Process that respects your time.** If the ghostwriter needs 3 hours of your time per week, that defeats the purpose. The best ones need 30 minutes or less.
+- **Pipeline focus.** Pretty impressions are nice. Pipeline is better. Your ghostwriter should be obsessed with turning attention into revenue. (Here's [how to measure LinkedIn ROI](/blog/how-to-measure-linkedin-roi-b2b-saas/) the right way.)
+- **Process that respects your time.** If the ghostwriter needs 3 hours of your time per week, that defeats the purpose. The best ones need 30 minutes or less. (Not sure if you need one? Read [should you hire a LinkedIn ghostwriter](/blog/should-you-hire-a-linkedin-ghostwriter/).)
 
 ## The bottom line
 

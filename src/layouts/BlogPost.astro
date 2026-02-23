@@ -2,6 +2,10 @@
 const { title, description, pubDate, updatedDate, keywords } = Astro.props;
 const formattedDate = new Date(pubDate).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
 const formattedUpdate = updatedDate ? new Date(updatedDate).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }) : null;
+const slug = Astro.url.pathname.replace(/^\/blog\//, '').replace(/\/$/, '');
+const pubDateISO = new Date(pubDate).toISOString();
+const modDateISO = updatedDate ? new Date(updatedDate).toISOString() : pubDateISO;
+const ogImage = `https://draftrev.com/og-default.svg`;
 ---
 
 <!DOCTYPE html>
@@ -15,28 +19,84 @@ const formattedUpdate = updatedDate ? new Date(updatedDate).toLocaleDateString('
 <meta property="og:description" content={description}>
 <meta property="og:url" content={Astro.url.href}>
 <meta property="og:type" content="article">
+<meta property="og:image" content={ogImage}>
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="article:published_time" content={pubDateISO}>
+<meta property="article:modified_time" content={modDateISO}>
+<meta property="article:section" content="LinkedIn Strategy">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content={`${title} | Draft`}>
 <meta name="twitter:description" content={description}>
+<meta name="twitter:image" content={ogImage}>
 {keywords && <meta name="keywords" content={keywords.join(', ')}>}
+{keywords && keywords.map((kw: string) => <meta property="article:tag" content={kw} />)}
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="canonical" href={Astro.url.href}>
 <script type="application/ld+json" set:html={JSON.stringify({
   "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": title,
-  "description": description,
-  "datePublished": pubDate,
-  "dateModified": updatedDate || pubDate,
-  "publisher": {
-    "@type": "Organization",
-    "name": "Draft",
-    "url": "https://draftrev.com"
-  },
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": Astro.url.href
-  }
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": `${Astro.url.href}#article`,
+      "headline": title,
+      "description": description,
+      "datePublished": pubDateISO,
+      "dateModified": modDateISO,
+      "image": ogImage,
+      "author": {
+        "@type": "Organization",
+        "@id": "https://draftrev.com/#organization",
+        "name": "Draft",
+        "url": "https://draftrev.com"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://draftrev.com/#organization",
+        "name": "Draft",
+        "url": "https://draftrev.com",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://draftrev.com/favicon.svg"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": Astro.url.href
+      },
+      "articleSection": "LinkedIn Strategy",
+      ...(keywords ? { "keywords": keywords.join(", ") } : {}),
+      "isPartOf": {
+        "@type": "Blog",
+        "@id": "https://draftrev.com/blog/#blog",
+        "name": "Draft Blog",
+        "url": "https://draftrev.com/blog/"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": `${Astro.url.href}#breadcrumb`,
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://draftrev.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://draftrev.com/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": title
+        }
+      ]
+    }
+  ]
 })} />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -129,15 +189,31 @@ nav .container { max-width: 1140px; margin: 0 auto; padding: 0 2rem; display: fl
   border-bottom: 1px solid var(--border);
   margin-bottom: 3rem;
 }
-.article-back {
+.breadcrumb {
   font-family: var(--font-mono);
-  font-size: 0.72rem;
+  font-size: 0.68rem;
   font-weight: 500;
   text-transform: uppercase;
-  letter-spacing: 0.15em;
-  color: var(--accent);
+  letter-spacing: 0.12em;
   margin-bottom: 2rem;
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+.breadcrumb a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+.breadcrumb a:hover { color: var(--accent-hover); text-decoration: none; }
+.bc-sep { color: var(--border-hover); }
+.bc-current {
+  color: var(--text-muted);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 400px;
 }
 .article-title {
   font-family: var(--font-display);
@@ -321,10 +397,14 @@ footer .container { max-width: 1140px; }
 <article>
   <div class="container">
     <header class="article-header">
-      <a href="/blog" class="article-back">&larr; Back to blog</a>
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="/">Home</a> <span class="bc-sep">/</span>
+        <a href="/blog">Blog</a> <span class="bc-sep">/</span>
+        <span class="bc-current">{title}</span>
+      </nav>
       <h1 class="article-title">{title}</h1>
       <div class="article-meta">
-        <time datetime={pubDate.toISOString()}>{formattedDate}</time>
+        <time datetime={pubDateISO}>{formattedDate}</time>
         {formattedUpdate && <span> &middot; Updated {formattedUpdate}</span>}
       </div>
     </header>

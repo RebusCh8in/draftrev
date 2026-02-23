@@ -62,7 +62,7 @@ The content that performs best by vanity metrics is usually the worst for pipeli
 
 **Volume without specificity dilutes your positioning.** If you post five times a week and only one of those posts is relevant to your ICP, you're training the algorithm to show your content to the wrong people.
 
-This is exactly why one high-quality post per week outperforms five forgettable ones. One post, written specifically for the 3% of your network that can actually buy, with a perspective sharp enough to make them stop scrolling. That's how you generate 300+ comments from the right people and book 15 demos from a single post.
+This is exactly why [one high-quality post per week](/blog/ceo-linkedin-strategy-for-pipeline/) outperforms five forgettable ones. One post, written specifically for the 3% of your network that can actually buy, with a perspective sharp enough to make them stop scrolling. That's how you generate 300+ comments from the right people and [book 15 demos from a single post](/blog/how-to-book-demos-from-linkedin/).
 
 ## How to tell if your LinkedIn content is actually working
 
@@ -98,7 +98,7 @@ Here's a simple framework:
 - Average deal size from LinkedIn leads vs other channels
 - Sales cycle length for LinkedIn-sourced deals vs cold outbound
 
-When you track these numbers, you'll quickly see that one well-crafted post that speaks directly to your ICP is worth more than a month of "content" that chases impressions.
+When you track these numbers, you'll quickly see that one well-crafted post that speaks directly to your ICP is worth more than a month of "content" that chases impressions. For a deeper dive, see our full [LinkedIn ROI measurement framework](/blog/how-to-measure-linkedin-roi-b2b-saas/).
 
 ## The bottom line
 
@@ -106,7 +106,7 @@ Impressions are LinkedIn's way of keeping you addicted to the platform. Pipeline
 
 If your LinkedIn strategy is measured in impressions, you have a social media hobby. If it's measured in demos, signups, and revenue, you have a pipeline channel.
 
-One post per week. Written for the 3% who can buy. Measured in pipeline, not applause.
+One post per week. Written for the 3% who can buy. Measured in pipeline, not applause. If you're wondering whether a [LinkedIn ghostwriter](/blog/linkedin-ghostwriting-for-saas-ceos/) can help you get there, it's worth exploring.
 
 ---
 

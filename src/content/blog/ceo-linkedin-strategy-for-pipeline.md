@@ -62,7 +62,7 @@ Not three. Not five. One.
 
 Here's why: one exceptional post that makes your ICP stop scrolling is worth more than five that blend into the noise. The algorithm doesn't reward volume. It rewards engagement depth. A post that generates 300+ substantive comments will reach far more people than five posts that each get 20 likes.
 
-The math is simple:
+The math is simple (and we break it down further in [impressions vs pipeline](/blog/linkedin-impressions-vs-pipeline/)):
 - One post per week = 4 posts per month
 - Each post reaching 20,000 to 100,000 impressions
 - Each post targeting your specific ICP
@@ -101,7 +101,7 @@ The secret is that you didn't get good at LinkedIn. You got consistent. One post
 
 ## Common mistakes to avoid
 
-**Don't outsource to your marketing team.** Your marketing team can post on the company page. Your personal profile needs to sound like you. Buyers can tell the difference between a CEO who writes (or has a skilled ghostwriter) and a corporate communications team.
+**Don't outsource to your marketing team.** Your marketing team can post on the company page. Your personal profile needs to sound like you. Buyers can tell the difference between a CEO who writes (or has a [skilled ghostwriter](/blog/should-you-hire-a-linkedin-ghostwriter/)) and a corporate communications team.
 
 **Don't chase trends.** Whatever format is "trending" on LinkedIn this month (carousels, polls, document posts) is irrelevant. The format doesn't matter. The insight matters. A plain text post with a sharp take will outperform a beautifully designed carousel with generic advice.
 
@@ -113,7 +113,7 @@ The secret is that you didn't get good at LinkedIn. You got consistent. One post
 
 Your LinkedIn strategy doesn't need to be complicated. One post per week. Written for one specific reader. About a topic you have genuine authority on. Followed by intentional engagement with the people who responded.
 
-Do this for 90 days. Measure it in demos booked, not impressions earned. You'll wonder why you didn't start sooner.
+Do this for 90 days. [Measure it in demos booked](/blog/how-to-measure-linkedin-roi-b2b-saas/), not impressions earned. You'll wonder why you didn't start sooner.
 
 ---
 

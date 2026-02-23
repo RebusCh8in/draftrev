@@ -28,7 +28,7 @@ Before we build the framework, understand why your CRM doesn't capture LinkedIn'
 
 **Multi-touch attribution is broken for organic social.** Most B2B SaaS companies use first-touch or last-touch attribution. LinkedIn rarely gets either one because it operates in the middle and top of the funnel. By the time someone converts, they've touched 5 other channels.
 
-Chris Walker estimates that 93% of LinkedIn-sourced pipeline goes uncaptured by traditional attribution. That means if your CRM shows $100K in LinkedIn pipeline, the real number is closer to $1.4M.
+Chris Walker estimates that 93% of LinkedIn-sourced pipeline goes uncaptured by traditional attribution. This is exactly why [chasing impressions](/blog/linkedin-impressions-vs-pipeline/) leads CEOs astray. That means if your CRM shows $100K in LinkedIn pipeline, the real number is closer to $1.4M.
 
 ## The LinkedIn ROI Framework
 
@@ -97,7 +97,7 @@ After 90 days of consistent posting (one high-quality post per week), here's wha
 | Inbound DMs per month | 5 to 20+ |
 | Self-reported LinkedIn attribution per quarter | 15 to 40% of pipeline |
 
-If you're below these ranges after 90 days of consistent posting, the issue is usually content quality or targeting, not the channel itself.
+If you're below these ranges after 90 days of consistent posting, the issue is usually content quality or targeting, not the channel itself. Our [CEO LinkedIn strategy playbook](/blog/ceo-linkedin-strategy-for-pipeline/) covers how to fix both.
 
 ## The dashboard
 
@@ -136,7 +136,7 @@ When that number is growing month over month, LinkedIn is working. When it's fla
 
 LinkedIn ROI is real. It's just invisible to traditional attribution. Build a parallel measurement system: self-reported attribution, sales call tracking, weekly leading indicators, and quarterly revenue math.
 
-When you measure it properly, you'll find that one post per week, written for your ICP and measured in pipeline, is one of the highest-ROI investments you can make as a B2B SaaS CEO.
+When you measure it properly, you'll find that one post per week, written for your ICP and measured in pipeline, is one of the highest-ROI investments you can make as a B2B SaaS CEO. If you're considering getting help, here's [how to decide if a ghostwriter is right for you](/blog/should-you-hire-a-linkedin-ghostwriter/).
 
 ---
 

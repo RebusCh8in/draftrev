@@ -58,7 +58,7 @@ The second version creates urgency because it describes a situation the reader i
 
 ### Step 3: Show the outcome, not the process
 
-Nobody books a demo because your process sounds interesting. They book because they want the result.
+Nobody books a demo because your process sounds interesting. They book because they want the result. (This is also why [impressions are a terrible success metric](/blog/linkedin-impressions-vs-pipeline/).)
 
 Instead of explaining how you do what you do, show what happens when it's done:
 
@@ -118,13 +118,13 @@ When a single post reaches 20,000 to 100,000 people and generates 300+ comments:
 - Even if only a fraction of those book a demo, you've generated more qualified pipeline than most outbound teams produce in a week
 - And this compounds. Each post builds on the last. Your audience grows. Your reputation grows. The demo booking rate goes up over time.
 
-Compare this to cold outbound: hundreds of emails, single-digit response rates, and prospects who've never heard of you. LinkedIn-sourced demos close faster, have higher deal values, and start with built-in trust.
+Compare this to cold outbound: hundreds of emails, single-digit response rates, and prospects who've never heard of you. LinkedIn-sourced demos close faster, have higher deal values, and start with built-in trust. (Here's [how to actually measure that ROI](/blog/how-to-measure-linkedin-roi-b2b-saas/).)
 
 ## The bottom line
 
 Demos don't come from impressions. They come from writing something so specific and so relevant that the right person reads it and thinks "this is exactly my situation."
 
-One post per week. Written for one person. Measured in demos booked, not likes received.
+One post per week. Written for one person. Measured in demos booked, not likes received. For the full strategy, read our [CEO LinkedIn playbook for pipeline](/blog/ceo-linkedin-strategy-for-pipeline/).
 
 ---
 
