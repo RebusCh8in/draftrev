@@ -151,23 +151,26 @@ nav {
 }
 nav .container { max-width: 1140px; margin: 0 auto; padding: 0 2rem; display: flex; align-items: center; justify-content: space-between; }
 .nav-logo {
-  font-family: var(--font-display);
-  font-size: 1.35rem; color: var(--text-bright);
-  font-style: italic;
-  letter-spacing: -0.01em;
+  display: flex;
+  align-items: center;
   text-decoration: none;
 }
 .nav-logo:hover { text-decoration: none; }
+.nav-logo img {
+  height: 26px;
+  width: auto;
+  display: block;
+}
 .nav-links { display: flex; align-items: center; gap: 2.5rem; }
 .nav-links a {
-  font-size: 0.82rem; font-weight: 400;
+  font-size: 0.9rem; font-weight: 400;
   color: var(--text-secondary);
   text-decoration: none;
   transition: color 0.3s ease;
 }
 .nav-links a:hover { color: var(--text-bright); text-decoration: none; }
 .nav-cta {
-  font-size: 0.78rem !important; font-weight: 600 !important;
+  font-size: 0.85rem !important; font-weight: 600 !important;
   color: #FFFFFF !important;
   background: var(--accent);
   padding: 0.5rem 1.2rem;
@@ -362,9 +365,13 @@ footer .container { max-width: 1140px; }
   align-items: center;
 }
 .footer-brand {
-  font-family: var(--font-display);
-  font-size: 1.15rem;
-  color: var(--text-bright);
+  display: flex;
+  align-items: center;
+}
+.footer-brand img {
+  height: 18px;
+  width: auto;
+  display: block;
 }
 .footer-copy { font-size: 0.75rem; color: var(--text-muted); }
 
@@ -437,7 +444,7 @@ footer .container { max-width: 1140px; }
 
 <nav>
   <div class="container">
-    <a href="/" class="nav-logo">Draft</a>
+    <a href="/" class="nav-logo"><img src="/logo.svg" alt="Draft"></a>
     <button class="nav-toggle" aria-label="Menu">
       <span></span><span></span><span></span>
     </button>
@@ -480,7 +487,7 @@ footer .container { max-width: 1140px; }
 <footer>
   <div class="container">
     <div class="footer-inner">
-      <span class="footer-brand">Draft</span>
+      <span class="footer-brand"><img src="/logo.svg" alt="Draft"></span>
       <span class="footer-copy">&copy; 2026 Draft. Engineered for pipeline.</span>
     </div>
   </div>

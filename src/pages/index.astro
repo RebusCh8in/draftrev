@@ -255,20 +255,23 @@ nav.scrolled {
 }
 nav .container { display: flex; align-items: center; justify-content: space-between; }
 .nav-logo {
-  font-family: var(--font-display);
-  font-size: 1.35rem; color: var(--text-bright);
-  font-style: italic;
-  letter-spacing: -0.01em;
+  display: flex;
+  align-items: center;
+}
+.nav-logo img {
+  height: 26px;
+  width: auto;
+  display: block;
 }
 .nav-links { display: flex; align-items: center; gap: 2.5rem; }
 .nav-links a {
-  font-size: 0.82rem; font-weight: 400;
+  font-size: 0.9rem; font-weight: 400;
   color: var(--text-secondary);
   transition: color 0.3s ease;
 }
 .nav-links a:hover { color: var(--text-bright); }
 .nav-cta {
-  font-size: 0.78rem !important; font-weight: 600 !important;
+  font-size: 0.85rem !important; font-weight: 600 !important;
   color: #FFFFFF !important;
   background: var(--accent);
   padding: 0.5rem 1.2rem;
@@ -1148,10 +1151,12 @@ footer {
   gap: 3rem;
 }
 .footer-brand-name {
-  font-family: var(--font-display);
-  font-size: 1.15rem;
-  color: var(--text-bright);
   margin-bottom: 0.35rem;
+}
+.footer-brand-name img {
+  height: 18px;
+  width: auto;
+  display: block;
 }
 .footer-brand-title {
   font-size: 0.8rem;
@@ -1313,7 +1318,7 @@ footer {
 <!-- Nav -->
 <nav>
   <div class="container">
-    <a href="#" class="nav-logo">Draft</a>
+    <a href="#" class="nav-logo"><img src="/logo.svg" alt="Draft"></a>
     <button class="nav-toggle" aria-label="Menu">
       <span></span><span></span><span></span>
     </button>
@@ -1705,7 +1710,7 @@ footer {
   <div class="container">
     <div class="footer-grid">
       <div>
-        <div class="footer-brand-name">Draft</div>
+        <div class="footer-brand-name"><img src="/logo.svg" alt="Draft"></div>
       </div>
       <div>
         <div class="footer-heading">Resources</div>
