@@ -110,4 +110,4 @@ One post per week. Written for the 3% who can buy. Measured in pipeline, not app
 
 ---
 
-*Draft helps B2B SaaS CEOs turn LinkedIn into a pipeline channel. One post per week, measured in demos and revenue, not impressions.*
+*Draft helps B2B SaaS CEOs turn LinkedIn into a pipeline channel. One post per week, measured in demos, revenue, impressions, and audience growth.*

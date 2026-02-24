@@ -124,7 +124,7 @@ Compare this to cold outbound: hundreds of emails, single-digit response rates, 
 
 Demos don't come from impressions. They come from writing something so specific and so relevant that the right person reads it and thinks "this is exactly my situation."
 
-One post per week. Written for one person. Measured in demos booked, not likes received. For the full strategy, read our [CEO LinkedIn playbook for pipeline](/blog/ceo-linkedin-strategy-for-pipeline/).
+One post per week. Written for one person. Measured in demos booked, impressions earned, and audience compounding. For the full strategy, read our [CEO LinkedIn playbook for pipeline](/blog/ceo-linkedin-strategy-for-pipeline/).
 
 ---
 

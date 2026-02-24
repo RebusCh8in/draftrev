@@ -28,7 +28,7 @@ A good ghostwriter does this:
 
 **Writes and iterates.** Drafts go through review cycles. You approve everything before it goes live. Over time, the ghostwriter gets so dialed into your voice that the review cycle shrinks from 30 minutes to 5.
 
-**Tracks what works.** Not impressions. Pipeline. Which posts generated DMs? Which ones led to demos? Which topics made prospects mention your content on sales calls?
+**Tracks what works.** Pipeline first, plus impressions and audience growth. Which posts generated DMs? Which ones led to demos? Which topics made prospects mention your content on sales calls?
 
 The end result: every week, your network sees a post that sounds exactly like you. Because the ideas are yours. The ghostwriter just made them land.
 
@@ -50,8 +50,6 @@ Be honest with yourself about these:
 
 **You don't have product-market fit yet.** If you're pre-PMF, your time is better spent talking to customers than building a LinkedIn presence. Get the fundamentals right first.
 
-**You can't commit 30 minutes per week.** Even with a ghostwriter, you need to provide input. A quick voice memo, a 20-minute call, or a review of drafts. If you genuinely can't spare that, the quality will suffer because the ghostwriter won't have fresh material to work with.
-
 **You want a content agency, not a ghostwriter.** If you're looking for someone to also manage your company page, run LinkedIn ads, and build a content calendar across 5 platforms, that's an agency. A ghostwriter does one thing: makes your personal LinkedIn presence generate pipeline.
 
 **Your expectations are unrealistic.** LinkedIn is a compounding channel. Post one generates awareness. Post four builds familiarity. Post eight builds trust. Post twelve books the demo. If you expect 50 demos from your first post, you'll be disappointed.
@@ -62,7 +60,7 @@ If you've decided it makes sense, here's how to evaluate ghostwriters:
 
 **Do they understand your industry?** A ghostwriter who's written for B2B SaaS CEOs will ramp up in days. (Here's a deeper look at [what a LinkedIn ghostwriter actually does](/blog/linkedin-ghostwriting-for-saas-ceos/).) A generalist who's written for fitness coaches and real estate agents will take months and still miss the nuance. Ask them about ACV, pipeline metrics, and sales cycles. If they don't know what those words mean, keep looking.
 
-**Can they show pipeline results?** Not impressions. Not follower growth. Actual pipeline. Posts that [booked demos](/blog/how-to-book-demos-from-linkedin/). Content that shortened sales cycles. If a ghostwriter can only show you engagement metrics, they're optimizing for the wrong thing.
+**Can they show pipeline results?** Actual pipeline. Posts that [booked demos](/blog/how-to-book-demos-from-linkedin/). Content that shortened sales cycles. Impressions and follower growth matter too, but if a ghostwriter can only show you engagement metrics and no pipeline, they're optimizing for the wrong thing.
 
 **Do their samples sound like real people?** Read their portfolio. Does each client sound different? Or does every post have the same generic, polished tone? A good ghostwriter is a chameleon. A bad one has one voice that they paste onto every client.
 
@@ -87,12 +85,12 @@ One post per week that consistently generates 300+ comments and books demos is, 
 
 ## The bottom line
 
-Hire a ghostwriter if: you're a B2B SaaS CEO selling $30K+ ACV, you know LinkedIn works but can't do it consistently, and you want pipeline, not followers.
+Hire a ghostwriter if: you're a B2B SaaS CEO selling $30K+ ACV, you know LinkedIn works but can't do it consistently, and you want pipeline, audience growth, and impressions that compound.
 
-Don't hire one if: you're pre-PMF, you can't commit 30 minutes a week, or you're looking for a full-service content agency.
+Don't hire one if: you're pre-PMF or you're looking for a full-service content agency.
 
 And when you do hire one, judge them by the only metric that matters: did your pipeline grow? (Not sure how to track that? Read our [LinkedIn ROI measurement framework](/blog/how-to-measure-linkedin-roi-b2b-saas/).)
 
 ---
 
-*Draft ghostwrites LinkedIn content for B2B SaaS CEOs. One post per week. Measured in pipeline, not impressions.*
+*Draft ghostwrites LinkedIn content for B2B SaaS CEOs. One post per week. Measured in pipeline, impressions, and audience growth.*

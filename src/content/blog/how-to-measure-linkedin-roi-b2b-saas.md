@@ -1,6 +1,6 @@
 ---
 title: "How to Measure LinkedIn ROI for B2B SaaS (A Framework That Actually Works)"
-description: "Tired of guessing whether LinkedIn is working? Here's a concrete framework for measuring LinkedIn ROI in pipeline dollars, not vanity metrics."
+description: "Tired of guessing whether LinkedIn is working? Here's a concrete framework for measuring LinkedIn ROI in pipeline dollars, impressions, and audience growth."
 pubDate: 2026-02-12
 keywords:
   - how to measure linkedin ROI for B2B SaaS
@@ -78,7 +78,7 @@ Every quarter, calculate:
 
 **Total LinkedIn-influenced pipeline:** Sum the deal value of every opportunity where LinkedIn was mentioned as a touchpoint, even if it wasn't the primary source.
 
-**Cost of LinkedIn investment:** What you spend on ghostwriting, tools, or time. For a CEO with a ghostwriter, this is typically $3,000 to $7,000/month.
+**Cost of LinkedIn investment:** What you spend on ghostwriting, tools, or time. For a CEO with a ghostwriter, this is typically $3,000 to $10,000/month.
 
 **LinkedIn ROI:** (LinkedIn-sourced pipeline + LinkedIn-influenced pipeline) / Cost of LinkedIn investment.
 
@@ -86,7 +86,7 @@ For most B2B SaaS CEOs posting consistently, this ROI is 10x to 50x. The channel
 
 ## What good numbers look like
 
-After 90 days of consistent posting (one high-quality post per week), here's what healthy metrics look like for a B2B SaaS CEO:
+With consistent, high-quality posting (one post per week), here's what healthy metrics look like for a B2B SaaS CEO:
 
 | Metric | Healthy Range |
 |--------|--------------|
@@ -97,7 +97,7 @@ After 90 days of consistent posting (one high-quality post per week), here's wha
 | Inbound DMs per month | 5 to 20+ |
 | Self-reported LinkedIn attribution per quarter | 15 to 40% of pipeline |
 
-If you're below these ranges after 90 days of consistent posting, the issue is usually content quality or targeting, not the channel itself. Our [CEO LinkedIn strategy playbook](/blog/ceo-linkedin-strategy-for-pipeline/) covers how to fix both.
+If you're below these ranges after consistent posting, the issue is usually content quality or targeting, not the channel itself. Our [CEO LinkedIn strategy playbook](/blog/ceo-linkedin-strategy-for-pipeline/) covers how to fix both.
 
 ## The dashboard
 
@@ -128,7 +128,7 @@ This takes 10 minutes per week to maintain and gives you the data to answer your
 
 If you only track one thing, track this: **demos booked where the prospect mentioned LinkedIn.**
 
-Not impressions. Not engagement rate. Not follower count. Demos where someone said, in their own words, that your LinkedIn content played a role in their decision to take a call.
+Track impressions and follower growth too (they show your reach is compounding), but the number that proves LinkedIn is working is demos where someone said, in their own words, that your LinkedIn content played a role in their decision to take a call.
 
 When that number is growing month over month, LinkedIn is working. When it's flat, something needs to change (usually the content, not the channel).
 
@@ -140,4 +140,4 @@ When you measure it properly, you'll find that one post per week, written for yo
 
 ---
 
-*Draft helps B2B SaaS CEOs turn LinkedIn into a measurable pipeline channel. One post per week. Tracked in demos and revenue, not impressions.*
+*Draft helps B2B SaaS CEOs turn LinkedIn into a measurable pipeline channel. One post per week. Tracked in demos, revenue, impressions, and audience growth.*

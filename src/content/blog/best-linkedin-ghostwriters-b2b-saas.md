@@ -29,7 +29,7 @@ We assessed each provider across five criteria that actually matter for SaaS CEO
 - **Pipeline attribution**: Do they measure (or even talk about) demos and revenue from content? Or just impressions and engagement?
 - **SaaS expertise**: Do they understand product-led growth, founder-led sales, and the B2B buyer's journey?
 - **Voice fidelity**: Will your audience believe *you* wrote it, or does it read like generic thought leadership?
-- **CEO time required**: How many hours per week do you need to invest? Most CEOs have 30 minutes, max.
+- **CEO time required**: How much of your time does the service need? The best ones handle everything so you barely have to lift a finger.
 We didn't weight these equally. Pipeline attribution matters most. If a ghostwriter can't connect content to revenue, they're a marketing expense with no measurable return. If you're unsure whether LinkedIn content should be measured differently, [we broke down impressions vs. pipeline here](/blog/linkedin-impressions-vs-pipeline/).
 
 ## Summary Comparison
@@ -89,7 +89,7 @@ These are real numbers, not projections.
 - The only service that bundles viral content + custom lead magnet resources + video every single week
 - Pipeline-denominated from day one. Every engagement is measured against revenue, not reach.
 - Deep B2B SaaS and AI specialization. Every post is built for technical buyers and complex sales cycles.
-- CEO time commitment under 30 minutes per week
+- Near-zero CEO time. Draft handles voice extraction independently.
 - The weekly resource (spreadsheets, templates, calculators) is a lead capture engine. Competitors don't build these at all, let alone weekly.
 - Quality compounds. Each viral post builds the audience for the next one. Each resource builds your email list.
 
@@ -259,7 +259,7 @@ The right choice depends on what you're actually trying to achieve. Here's a dec
 
 A few more questions to help narrow it down:
 
-**How much time can you invest?** If the answer is under 30 minutes per week, you need a service that extracts your voice quickly and runs autonomously. Draft and Stop The Scroll are the lowest time commitment. Soleo and Project 33 require more involvement.
+**How much time can you invest?** Draft requires almost zero CEO time (voice extraction is handled independently). Stop The Scroll is also low commitment. Soleo and Project 33 require more involvement.
 
 **What's your budget?** If you're early stage and testing, Cleverly or Column Content are accessible starting points. Series A+ with marketing budget? Project 33 or The Media Engine give you solid B2B depth. Series B+ selling $30K+ ACV deals? Draft pays for itself with a single closed deal per quarter. Series C+ with executive branding needs? Soleo is worth the conversation.
 
@@ -275,7 +275,7 @@ A few more questions to help narrow it down:
 
 ### Is LinkedIn ghostwriting worth it for SaaS CEOs?
 
-**Yes, if the ghostwriter connects content to pipeline.** B2B SaaS companies using founder-led LinkedIn content report shorter sales cycles and higher close rates when prospects engage with CEO posts before entering the funnel. The key is choosing a ghostwriter who measures success in demos and revenue, not impressions. A single post that books 15 demos pays for itself many times over.
+**Yes, if the ghostwriter connects content to pipeline.** B2B SaaS companies using founder-led LinkedIn content report shorter sales cycles and higher close rates when prospects engage with CEO posts before entering the funnel. The key is choosing a ghostwriter who measures success in demos and revenue alongside impressions and audience growth. A single Draft post that books 15 demos pays for itself many times over.
 
 ### What's the difference between a LinkedIn ghostwriter and an agency?
 

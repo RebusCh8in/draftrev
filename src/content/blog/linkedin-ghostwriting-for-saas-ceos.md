@@ -66,7 +66,7 @@ Not all ghostwriters are created equal. For B2B SaaS specifically, you want:
 - **Industry understanding.** They need to know SaaS metrics, buyer personas, and the competitive landscape. Generic marketing writers won't cut it.
 - **Voice fidelity.** Read their work. Does it sound like a real founder, or does it sound like AI-generated content?
 - **Pipeline focus.** Pretty impressions are nice. Pipeline is better. Your ghostwriter should be obsessed with turning attention into revenue. (Here's [how to measure LinkedIn ROI](/blog/how-to-measure-linkedin-roi-b2b-saas/) the right way.)
-- **Process that respects your time.** If the ghostwriter needs 3 hours of your time per week, that defeats the purpose. The best ones need 30 minutes or less. (Not sure if you need one? Read [should you hire a LinkedIn ghostwriter](/blog/should-you-hire-a-linkedin-ghostwriter/).)
+- **Process that respects your time.** If the ghostwriter needs hours of your time per week, that defeats the purpose. The best ones handle voice extraction independently so you barely lift a finger. (Not sure if you need one? Read [should you hire a LinkedIn ghostwriter](/blog/should-you-hire-a-linkedin-ghostwriter/).)
 
 ## The bottom line
 

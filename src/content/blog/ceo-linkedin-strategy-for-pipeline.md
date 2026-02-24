@@ -89,15 +89,15 @@ After every post:
 
 This follow-up work takes 15-20 minutes per day in the days after your post goes live. It's where demos get booked.
 
-## What this looks like after 90 days
+## What this looks like when it's working
 
-Weeks 1 through 4: You're building the habit. Posts get modest engagement. You're finding your voice and refining your topics. A few profile views from interesting people. Maybe one or two DM conversations.
+Weeks 1 through 2: The CEO shows up with a sharp take. Engagement builds. Comments from your network, profile views from ICP-fit prospects. DM conversations start.
 
-Weeks 5 through 8: Engagement picks up. You've hit on a few topics that resonate. Comments are getting more substantive. Prospects start mentioning your posts on sales calls.
+Weeks 3 through 4: Posts reach 20,000+ impressions. Demos booked directly from LinkedIn. Prospects mention your posts on sales calls. The flywheel is already spinning.
 
-Weeks 9 through 12: The flywheel is spinning. Posts consistently reach tens of thousands of impressions. You're booking demos directly from LinkedIn. Your sales team reports that prospects are warmer on first calls. Other founders start asking how you "got so good at LinkedIn."
+Month 2 and beyond: Pipeline compounds. Posts consistently reach tens of thousands of impressions. Your sales team reports that prospects are warmer on first calls. Other founders start asking how you "got so good at LinkedIn."
 
-The secret is that you didn't get good at LinkedIn. You got consistent. One post per week, written for one reader, about one of three topics, followed by intentional engagement.
+The secret is that you didn't get good at LinkedIn. You got quality right from day one. One post per week, written for one reader, about one of three topics, followed by intentional engagement.
 
 ## Common mistakes to avoid
 
@@ -107,13 +107,13 @@ The secret is that you didn't get good at LinkedIn. You got consistent. One post
 
 **Don't optimize for impressions.** We covered this already but it's worth repeating. A post that gets 2,000 impressions but 5 DMs from qualified prospects is more valuable than a post that gets 50,000 impressions and zero pipeline.
 
-**Don't quit after a month.** LinkedIn is a compounding channel. The first month is always the slowest. The CEOs who win on LinkedIn are the ones who committed to showing up every single week. Not the ones who tried it for a month and decided "it doesn't work."
+**Don't quit early.** LinkedIn is a compounding channel. The CEOs who win are the ones who committed to showing up every single week. With Draft, pipeline starts in week one and compounds from there.
 
 ## The bottom line
 
 Your LinkedIn strategy doesn't need to be complicated. One post per week. Written for one specific reader. About a topic you have genuine authority on. Followed by intentional engagement with the people who responded.
 
-Do this for 90 days. [Measure it in demos booked](/blog/how-to-measure-linkedin-roi-b2b-saas/), not impressions earned. You'll wonder why you didn't start sooner.
+Commit to this. [Measure it in demos booked](/blog/how-to-measure-linkedin-roi-b2b-saas/), impressions, and audience growth. You'll wonder why you didn't start sooner.
 
 ---
 
