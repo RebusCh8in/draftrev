@@ -1,0 +1,584 @@
+---
+
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-253CFQ6SH6"></script>
+<script is:inline>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-253CFQ6SH6');
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LinkedIn Pipeline Calculator | Draft</title>
+<meta name="description" content="Calculate how much revenue your CEO's LinkedIn could generate. See the ROI of LinkedIn ghostwriting for B2B SaaS.">
+<meta property="og:title" content="LinkedIn Pipeline Calculator | Draft">
+<meta property="og:description" content="Calculate how much revenue your CEO's LinkedIn could generate with one post per week.">
+<meta property="og:url" content="https://draftrev.com/calculator">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="canonical" href="https://draftrev.com/calculator/">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://draftrev.com/calculator/#webpage",
+      "url": "https://draftrev.com/calculator/",
+      "name": "LinkedIn Pipeline Calculator | Draft",
+      "description": "Calculate how much revenue your CEO's LinkedIn could generate with Draft's LinkedIn ghostwriting service.",
+      "isPartOf": { "@id": "https://draftrev.com/#website" }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://draftrev.com" },
+        { "@type": "ListItem", "position": 2, "name": "Pipeline Calculator", "item": "https://draftrev.com/calculator/" }
+      ]
+    }
+  ]
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --bg: #FAF7F2;
+  --bg-elevated: #F0EBE3;
+  --bg-card: #FFFFFF;
+  --border: #E0D8CC;
+  --border-hover: #C8BEAE;
+  --text-muted: #9A9185;
+  --text-secondary: #6B6158;
+  --text: #3D352D;
+  --text-bright: #1A1510;
+  --accent: #E8553A;
+  --accent-hover: #D44425;
+  --accent-dim: rgba(232, 85, 58, 0.06);
+  --font-display: 'Instrument Serif', Georgia, serif;
+  --font-body: 'Outfit', -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+html { font-size: 16px; -webkit-font-smoothing: antialiased; }
+body {
+  font-family: var(--font-body);
+  background: var(--bg);
+  color: var(--text);
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+a { text-decoration: none; color: inherit; }
+img { max-width: 100%; display: block; }
+.container { max-width: 1100px; margin: 0 auto; padding: 0 2rem; }
+
+/* ── NAV ── */
+nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  padding: 1.25rem 0;
+  transition: all 0.5s var(--ease-out);
+}
+nav.scrolled {
+  background: rgba(250, 247, 242, 0.9);
+  backdrop-filter: blur(24px) saturate(1.4);
+  -webkit-backdrop-filter: blur(24px) saturate(1.4);
+  border-bottom: 1px solid var(--border);
+  padding: 0.85rem 0;
+}
+nav .container { display: flex; align-items: center; justify-content: space-between; }
+.nav-logo { display: flex; align-items: center; }
+.nav-logo img { height: 26px; width: auto; display: block; }
+.nav-links { display: flex; align-items: center; gap: 2.5rem; }
+.nav-links a {
+  font-size: 0.9rem; font-weight: 400;
+  color: var(--text-secondary);
+  transition: color 0.3s ease;
+}
+.nav-links a:hover { color: var(--text-bright); }
+.nav-cta {
+  font-size: 0.85rem !important; font-weight: 600 !important;
+  color: #FFFFFF !important;
+  background: var(--accent);
+  padding: 0.5rem 1.2rem;
+  border-radius: 100px;
+  transition: all 0.35s var(--ease-out) !important;
+}
+.nav-cta:hover {
+  background: var(--accent-hover);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 20px rgba(232, 85, 58, 0.25);
+}
+.nav-toggle {
+  display: none; background: none; border: none; cursor: pointer;
+  flex-direction: column; gap: 5px; padding: 4px;
+}
+.nav-toggle span {
+  display: block; width: 22px; height: 2px;
+  background: var(--text-bright); border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* ── HERO ── */
+.calc-hero {
+  padding: 10rem 0 2rem;
+  text-align: center;
+}
+.calc-hero-eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.68rem; font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  color: var(--accent);
+  margin-bottom: 1.25rem;
+}
+.calc-hero h1 {
+  font-family: var(--font-display);
+  font-size: clamp(2.4rem, 5vw, 3.5rem);
+  line-height: 1.1;
+  color: var(--text-bright);
+  margin-bottom: 1rem;
+}
+.calc-hero-sub {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  font-weight: 300;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+/* ── CALCULATOR ── */
+.calc-section { padding: 3rem 0 5rem; }
+.calc-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  padding: 3.5rem;
+  box-shadow: 0 4px 40px rgba(0, 0, 0, 0.04);
+}
+.calc-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3.5rem;
+}
+
+/* ── INPUTS ── */
+.calc-inputs-title {
+  font-family: var(--font-mono);
+  font-size: 0.75rem; font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--text-muted);
+  margin-bottom: 2.5rem;
+}
+.input-group { margin-bottom: 2.25rem; }
+.input-group:last-child { margin-bottom: 0; }
+.input-label {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--text-bright);
+  margin-bottom: 1.25rem;
+  display: block;
+}
+.slider-row {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+.input-value {
+  font-family: var(--font-mono);
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--text-bright);
+  min-width: 100px;
+  text-align: right;
+  white-space: nowrap;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 8px;
+  border-radius: 100px;
+  outline: none;
+  cursor: pointer;
+  background: linear-gradient(
+    to right,
+    var(--accent) 0%,
+    var(--accent) var(--fill, 50%),
+    var(--bg-elevated) var(--fill, 50%),
+    var(--bg-elevated) 100%
+  );
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 28px; height: 28px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  border: 3px solid var(--accent);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+  cursor: grab;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+input[type="range"]::-webkit-slider-thumb:hover {
+  transform: scale(1.12);
+  box-shadow: 0 2px 14px rgba(0,0,0,0.22);
+}
+input[type="range"]::-webkit-slider-thumb:active { cursor: grabbing; }
+input[type="range"]::-moz-range-thumb {
+  width: 28px; height: 28px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  border: 3px solid var(--accent);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+  cursor: grab;
+}
+input[type="range"]::-moz-range-track {
+  height: 6px;
+  border-radius: 100px;
+  background: var(--bg-elevated);
+}
+
+/* ── DIVIDER ── */
+.calc-divider {
+  width: 1px;
+  background: var(--border);
+  display: none;
+}
+
+/* ── RESULTS ── */
+.calc-results { display: flex; flex-direction: column; justify-content: center; }
+.result-revenue-label {
+  font-family: var(--font-mono);
+  font-size: 0.78rem; font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--accent);
+  margin-bottom: 0.75rem;
+}
+.result-revenue {
+  font-family: var(--font-display);
+  font-size: clamp(3.5rem, 7vw, 5.5rem);
+  line-height: 1;
+  color: var(--text-bright);
+  margin-bottom: 0.5rem;
+}
+.result-revenue-sub {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  font-weight: 300;
+  margin-bottom: 2.5rem;
+}
+
+.result-rows { margin-bottom: 2rem; }
+.result-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.9rem 0;
+  border-bottom: 1px solid var(--border);
+}
+.result-row:last-child { border-bottom: none; }
+.result-row-label {
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+  font-weight: 400;
+}
+.result-row-value {
+  font-family: var(--font-mono);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-bright);
+}
+
+
+/* ── CTA ── */
+.calc-cta {
+  padding: 1rem 0 5rem;
+  text-align: center;
+}
+.calc-cta-btn {
+  display: inline-flex; align-items: center; gap: 0.75rem;
+  font-family: var(--font-body);
+  font-size: 1.35rem; font-weight: 700;
+  padding: 1.5rem 4rem; border-radius: 100px;
+  border: none; background: var(--accent); color: #FFFFFF;
+  text-decoration: none; transition: all 0.4s var(--ease-out);
+  box-shadow: 0 4px 24px rgba(232, 85, 58, 0.2);
+}
+.calc-cta-btn:hover {
+  background: var(--accent-hover);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 48px rgba(232, 85, 58, 0.35);
+}
+.calc-cta-note {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  font-weight: 300;
+  margin-top: 1rem;
+}
+
+/* ── FOOTER ── */
+footer {
+  border-top: 1px solid var(--border);
+  padding: 4.5rem 0 3rem;
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  gap: 3rem;
+}
+.footer-brand-name { margin-bottom: 0.35rem; }
+.footer-brand-name img { height: 18px; width: auto; display: block; }
+.footer-heading {
+  font-family: var(--font-mono);
+  font-size: 0.62rem; font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--text-muted);
+  margin-bottom: 1.25rem;
+}
+.footer-links { list-style: none; }
+.footer-links li { margin-bottom: 0.6rem; }
+.footer-links a { font-size: 0.85rem; color: var(--text); transition: color 0.3s ease; }
+.footer-links a:hover { color: var(--accent); }
+.footer-bottom {
+  margin-top: 3.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-copy { font-size: 0.75rem; color: var(--text-muted); }
+
+/* ── RESPONSIVE ── */
+@media (max-width: 768px) {
+  .nav-links { display: none; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0; background: rgba(250, 247, 242, 0.95); backdrop-filter: blur(24px); padding: 1.5rem 2rem; gap: 1rem; border-bottom: 1px solid var(--border); }
+  .nav-links.open { display: flex; }
+  .nav-toggle { display: flex; }
+  .calc-hero { padding: 8rem 0 1.5rem; }
+  .calc-card { padding: 2rem; }
+  .calc-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+  .result-revenue { font-size: 2.8rem !important; }
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+  .footer-bottom { flex-direction: column; gap: 0.5rem; text-align: center; }
+}
+@media (max-width: 480px) {
+  .container { padding: 0 1.25rem; }
+  .calc-card { padding: 1.5rem; border-radius: 16px; }
+  .input-value { min-width: 70px; font-size: 0.92rem; }
+}
+</style>
+</head>
+<body>
+
+<!-- Nav -->
+<nav>
+  <div class="container">
+    <a href="/" class="nav-logo"><img src="/logo.svg" alt="Draft"></a>
+    <button class="nav-toggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-links">
+      <a href="/linkedin-ghostwriting-agency">LinkedIn Ghostwriting</a>
+      <a href="/blog">Blog</a>
+      <a href="https://calendly.com/colby-draftrev/30min" class="nav-cta">Book a call</a>
+    </div>
+  </div>
+</nav>
+
+<main>
+  <!-- Hero -->
+  <header class="calc-hero">
+    <div class="container">
+      <div class="calc-hero-eyebrow">Pipeline Calculator</div>
+      <h1>How much revenue could<br>your LinkedIn generate with Draft?</h1>
+      <p class="calc-hero-sub">Plug in your numbers. See what one post per week could do.</p>
+    </div>
+  </header>
+
+  <!-- Calculator -->
+  <section class="calc-section">
+    <div class="container">
+      <div class="calc-card">
+        <div class="calc-grid">
+
+          <!-- Inputs -->
+          <div class="calc-inputs">
+            <div class="calc-inputs-title">Your numbers</div>
+
+            <div class="input-group">
+              <label class="input-label" for="acv">Average deal size</label>
+              <div class="slider-row">
+                <input type="range" id="acv" min="25000" max="500000" step="5000" value="50000">
+                <div class="input-value" id="acv-display">$50,000</div>
+              </div>
+            </div>
+
+            <div class="input-group">
+              <label class="input-label" for="close-rate">Close rate</label>
+              <div class="slider-row">
+                <input type="range" id="close-rate" min="5" max="50" step="5" value="20">
+                <div class="input-value" id="close-rate-display">20%</div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Results -->
+          <div class="calc-results">
+            <div class="result-revenue-label">Estimated annual revenue with Draft</div>
+            <div class="result-revenue" id="annual-revenue" data-current="0">$0</div>
+            <div class="result-revenue-sub">per year from one LinkedIn post per week</div>
+
+            <div class="result-rows">
+              <div class="result-row">
+                <span class="result-row-label">Demos per month</span>
+                <span class="result-row-value">20</span>
+              </div>
+              <div class="result-row">
+                <span class="result-row-label">Pipeline created per month</span>
+                <span class="result-row-value" id="monthly-pipeline">$300,000</span>
+              </div>
+              <div class="result-row">
+                <span class="result-row-label">Revenue per month</span>
+                <span class="result-row-value" id="monthly-revenue">$60,000</span>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="calc-cta">
+    <div class="container">
+      <a href="https://calendly.com/colby-draftrev/30min" class="calc-cta-btn">Book a Revenue Call <span aria-hidden="true">&rarr;</span></a>
+      <p class="calc-cta-note">30 minutes. See if Draft is the right fit.</p>
+    </div>
+  </section>
+</main>
+
+<!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand-name"><img src="/logo.svg" alt="Draft"></div>
+      </div>
+      <div>
+        <div class="footer-heading">Resources</div>
+        <ul class="footer-links">
+          <li><a href="/blog">Blog</a></li>
+          <li><a href="/calculator">Pipeline Calculator</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-heading">Connect</div>
+        <ul class="footer-links">
+          <li><a href="mailto:colby@draftrev.com">Email</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-copy">&copy; 2026 Draft. All rights reserved.</span>
+      <span class="footer-copy">Engineered for pipeline.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function() {
+  // Nav
+  const nav = document.querySelector('nav');
+  const toggle = document.querySelector('.nav-toggle');
+  const links = document.querySelector('.nav-links');
+  window.addEventListener('scroll', () => { nav.classList.toggle('scrolled', window.scrollY > 40); });
+  if (toggle && links) toggle.addEventListener('click', () => links.classList.toggle('open'));
+
+  // Elements
+  var acvSlider = document.getElementById('acv');
+  var closeSlider = document.getElementById('close-rate');
+  var acvDisplay = document.getElementById('acv-display');
+  var closeDisplay = document.getElementById('close-rate-display');
+  var annualRevEl = document.getElementById('annual-revenue');
+  var monthlyPipeEl = document.getElementById('monthly-pipeline');
+  var monthlyRevEl = document.getElementById('monthly-revenue');
+  // Constants
+  var DRAFT_DEMOS = 20;
+  var OPP_RATE = 0.50;
+
+  // Format
+  function fmt(val) { return '$' + Math.round(val).toLocaleString('en-US'); }
+
+  // Animate
+  var anims = new Map();
+  function anim(el, target, duration) {
+    duration = duration || 450;
+    if (anims.has(el)) cancelAnimationFrame(anims.get(el));
+    var start = parseFloat(el.dataset.current) || 0;
+    var t0 = performance.now();
+    function tick(now) {
+      var p = Math.min((now - t0) / duration, 1);
+      var e = 1 - Math.pow(1 - p, 3);
+      var v = start + (target - start) * e;
+      el.dataset.current = v;
+      el.textContent = fmt(v);
+      if (p < 1) anims.set(el, requestAnimationFrame(tick));
+      else anims.delete(el);
+    }
+    anims.set(el, requestAnimationFrame(tick));
+  }
+
+  // Slider fill
+  function fill(s) {
+    var pct = ((s.value - s.min) / (s.max - s.min)) * 100;
+    s.style.setProperty('--fill', pct + '%');
+  }
+
+  // Calculate
+  function calc() {
+    var acv = parseInt(acvSlider.value);
+    var cr = parseInt(closeSlider.value) / 100;
+
+    acvDisplay.textContent = fmt(acv);
+    closeDisplay.textContent = closeSlider.value + '%';
+    fill(acvSlider); fill(closeSlider);
+
+    // Draft: 20 demos → 50% become opps → pipeline = opps × ACV
+    // Revenue = opps × close rate × ACV
+    var opps = DRAFT_DEMOS * OPP_RATE;
+    var monthPipe = opps * acv;
+    var monthRev = opps * cr * acv;
+    var annualRev = monthRev * 12;
+    anim(annualRevEl, annualRev, 550);
+    anim(monthlyPipeEl, monthPipe, 350);
+    anim(monthlyRevEl, monthRev, 350);
+  }
+
+  [acvSlider, closeSlider].forEach(function(s) {
+    s.addEventListener('input', calc);
+    fill(s);
+  });
+
+  calc();
+})();
+</script>
+
+</body>
+</html>
