@@ -41,6 +41,7 @@ const posts = (await getCollection('blog')).sort(
       "name": "Blog | Draft",
       "description": "Insights on LinkedIn ghostwriting, pipeline generation, and founder-led content strategy for B2B SaaS CEOs.",
       "url": "https://draftrev.com/blog/",
+      "inLanguage": "en-US",
       "isPartOf": {
         "@type": "WebSite",
         "@id": "https://draftrev.com/#website"
@@ -55,6 +56,19 @@ const posts = (await getCollection('blog')).sort(
           "@id": "https://draftrev.com/#organization"
         }
       }
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://draftrev.com/blog/#itemlist",
+      "name": "Draft Blog Posts",
+      "itemListOrder": "https://schema.org/ItemListOrderDescending",
+      "numberOfItems": posts.length,
+      "itemListElement": posts.map((post, index) => ({
+        "@type": "ListItem",
+        "position": index + 1,
+        "url": `https://draftrev.com/blog/${post.id}/`,
+        "name": post.data.title
+      }))
     },
     {
       "@type": "BreadcrumbList",

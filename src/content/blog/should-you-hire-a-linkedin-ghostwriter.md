@@ -8,6 +8,13 @@ keywords:
   - what does a linkedin ghostwriter do
   - linkedin ghostwriting cost
   - hire linkedin ghostwriter
+faq:
+  - q: "Should I hire a LinkedIn ghostwriter for my SaaS company?"
+    a: "Hire a ghostwriter if you meet three criteria: you're a B2B SaaS CEO selling $30K+ ACV deals, you know LinkedIn matters for pipeline but can't post consistently yourself, and you're willing to invest in content as a revenue channel. Don't hire one if you're pre-product-market fit, if you can write consistently yourself, or if you only want vanity metrics like followers and impressions."
+  - q: "What should I look for when hiring a LinkedIn ghostwriter?"
+    a: "Look for five things: pipeline attribution (do they measure demos and revenue, not just engagement?), SaaS expertise (do they understand your buyer's journey?), voice fidelity (will your audience believe you wrote it?), minimal CEO time required (the best ghostwriters handle everything independently), and a clear content strategy tied to your business goals, not generic posting schedules."
+  - q: "When is the wrong time to hire a LinkedIn ghostwriter?"
+    a: "Don't hire a ghostwriter if you haven't found product-market fit yet (your messaging will change too fast), if your ACV is under $10K (the ROI math is harder to justify), if you can write consistently yourself and enjoy it, or if you only care about impressions and follower counts. Ghostwriting is a pipeline investment. If pipeline isn't the goal, save the budget."
 ---
 
 You've tried posting on LinkedIn yourself. Maybe you did it for a few weeks, maybe a few months. The results were inconsistent and it felt like shouting into a void. Or maybe you never started because you knew you wouldn't stick with it.

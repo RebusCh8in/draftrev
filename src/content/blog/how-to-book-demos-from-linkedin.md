@@ -8,6 +8,13 @@ keywords:
   - turn linkedin into a pipeline channel
   - linkedin lead generation B2B SaaS
   - linkedin demos booked
+faq:
+  - q: "How do you book demos from LinkedIn posts?"
+    a: "Booking demos from LinkedIn requires four elements: content that addresses your ICP's specific problem (not generic thought leadership), a tangible resource they want enough to comment or DM for, a LinkedIn profile with a clear booking link in the featured section, and consistent weekly posting that builds trust over time. The resource is the conversion engine: it filters for people who have the problem your product solves."
+  - q: "What type of LinkedIn posts book the most demos for B2B SaaS?"
+    a: "Posts that book demos share three traits: they speak to a specific buyer persona (not everyone on LinkedIn), they offer something tangible the reader wants (a framework, calculator, or template), and they address a problem the reader is actively trying to solve. Problem diagnosis posts and resource posts consistently outperform motivational or agreement-seeking content for pipeline generation."
+  - q: "Why aren't my LinkedIn posts generating demos?"
+    a: "Most LinkedIn posts fail to book demos for four reasons: they speak to the wrong audience (generic thought leadership attracts other thought leaders, not buyers), they generate agreement instead of action, they have no conversion mechanism (no resource, no CTA, no clear next step), or they're inconsistent (posting sporadically destroys algorithmic momentum and audience trust)."
 ---
 
 There's a gap between "great engagement" and "demos booked." Most LinkedIn content lives on the wrong side of that gap.

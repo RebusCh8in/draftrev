@@ -13,6 +13,17 @@ keywords:
   - what should a SaaS CEO post on linkedin
   - linkedin ghostwriting pricing cost
   - how long until linkedin generates pipeline
+faq:
+  - q: "What does a LinkedIn ghostwriter do?"
+    a: "A LinkedIn ghostwriter writes LinkedIn posts in your voice so your audience believes you wrote them. The process starts with voice extraction to capture how you think, speak, and position your company. From there, the ghostwriter produces content aligned with your business goals, delivers drafts for your approval, and manages the publishing cadence. You spend minutes reviewing instead of hours writing."
+  - q: "How much does a LinkedIn ghostwriter cost?"
+    a: "LinkedIn ghostwriting ranges from $500 per month for budget services focused on volume to $15,000+ per month for premium services with pipeline attribution, custom resources, and video. Budget gets you generic posts. Mid-range ($2,500 to $6,000) adds dedicated writers and strategy. Premium includes deep voice extraction, weekly resources, and revenue tracking. The right price depends on your ACV and pipeline goals."
+  - q: "Is a LinkedIn ghostwriter worth it for SaaS CEOs?"
+    a: "Yes, if the ghostwriter connects content to pipeline. B2B SaaS companies using founder-led LinkedIn content report shorter sales cycles and higher close rates when prospects engage with CEO posts before entering the funnel. For CEOs selling $30K+ ACV deals, a single closed deal from LinkedIn content pays for the annual engagement multiple times over. The key is choosing a provider who measures demos, not just impressions."
+  - q: "What should a SaaS CEO post on LinkedIn?"
+    a: "Post content that addresses your ICP's specific problems with insights only you can offer as a founder. The three highest-performing formats: problem diagnosis posts that make your buyer feel seen, contrarian takes backed by data that generate quality comments, and resource posts offering tangible tools (templates, calculators, frameworks). Stay within 2 to 3 content pillars that connect your expertise to your buyer's pain points."
+  - q: "How long until LinkedIn ghostwriting generates pipeline?"
+    a: "With most ghostwriters, 60 to 90 days. At Draft, the first week. The industry standard involves months of audience building before results appear. Draft skips that because every post ships with a custom lead capture resource from day one. Clients typically see inbound DMs and demo requests after their very first post goes live. The difference is between posting content and running a pipeline system."
 ---
 
 You've got questions about LinkedIn ghostwriting. Here are the answers, based on real experience ghostwriting for B2B SaaS CEOs selling $30K+ ACV deals.

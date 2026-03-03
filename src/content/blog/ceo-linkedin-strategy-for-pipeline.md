@@ -8,6 +8,13 @@ keywords:
   - linkedin content strategy B2B SaaS CEO
   - linkedin strategy for SaaS founders
   - linkedin pipeline generation
+faq:
+  - q: "What is the best LinkedIn strategy for B2B SaaS CEOs?"
+    a: "The best LinkedIn strategy for B2B SaaS CEOs focuses on pipeline, not followers. Post one exceptional piece of content per week from your personal profile, targeted at your ICP. Each post should address a specific problem your buyer faces, include a resource worth engaging for, and have a clear conversion path from engagement to demo. Measure success by demos and deals, not impressions."
+  - q: "How can a SaaS CEO turn LinkedIn into a pipeline channel?"
+    a: "Define your ICP and the problems they face. Post one high-quality post per week addressing those problems with unique insights from your experience as a founder. Include lead magnet resources (templates, calculators, frameworks) that give your ICP a reason to engage. Respond to every comment from target accounts. Optimize your profile with a clear CTA and booking link. Track demos and DMs as primary metrics."
+  - q: "How many LinkedIn followers does a B2B SaaS CEO need for pipeline?"
+    a: "You don't need 100,000 followers. You need 50 of the right people to trust you enough to take a call. A CEO with 2,000 followers in their target market can generate more pipeline than one with 50,000 general followers. What matters is audience composition (are decision-makers in your ICP following you?) and engagement quality (are they commenting and engaging with your content?)."
 ---
 
 Most LinkedIn strategy advice is written for solopreneurs trying to sell $97 courses. It's about hooks, engagement pods, and posting five times a day.

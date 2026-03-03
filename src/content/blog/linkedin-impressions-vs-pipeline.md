@@ -8,6 +8,13 @@ keywords:
   - why linkedin posts aren't generating leads
   - linkedin vanity metrics
   - linkedin roi b2b saas
+faq:
+  - q: "Why do LinkedIn impressions not equal pipeline?"
+    a: "Impressions measure how many people saw your post, not how many buyers took action. A post with 50,000 impressions from the wrong audience generates zero pipeline. A post with 5,000 impressions from your ICP can generate multiple demos. Impressions are a reach metric, not a revenue metric. They matter as a prerequisite for pipeline, but optimizing for impressions alone leads to content that performs for the algorithm while your pipeline stays flat."
+  - q: "What LinkedIn metrics actually predict pipeline for B2B SaaS?"
+    a: "The metrics that predict pipeline, in order: demos booked where the buyer engaged with your content, inbound DMs from ICP accounts, comment quality (are decision-makers engaging?), profile views from target companies, and connection requests from your ICP. Impressions and follower growth are supporting metrics that show momentum, but they should never be the primary measure of LinkedIn success for a B2B SaaS company."
+  - q: "Why is my LinkedIn content getting engagement but not generating leads?"
+    a: "Content that gets engagement without generating leads usually has one or more of these problems: it speaks to the wrong audience (other founders and marketers, not your ICP), it generates agreement instead of action (platitudes get likes but not demos), it has no conversion mechanism (no resource, no CTA), or your LinkedIn profile doesn't make the next step obvious. Fix the audience targeting and add a tangible resource to every post."
 ---
 
 You posted three times this week. One got 8,000 impressions. Your marketing team sent you a screenshot with a fire emoji.

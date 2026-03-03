@@ -8,6 +8,13 @@ keywords:
   - linkedin roi measurement
   - linkedin pipeline attribution
   - how to convert linkedin engagement into demos
+faq:
+  - q: "How do you measure LinkedIn ROI for B2B SaaS?"
+    a: "Measure LinkedIn ROI across three tiers. Pipeline metrics (demos booked from LinkedIn-engaged buyers, deals influenced, inbound DMs from ICP). Leading indicators (comment quality from decision-makers, profile views from target accounts, ICP connection requests). Reach metrics (impressions, follower growth, content saves). Ask every inbound lead 'How did you hear about us?' and track LinkedIn mentions in your CRM."
+  - q: "Why is LinkedIn pipeline attribution so difficult?"
+    a: "93% of LinkedIn-sourced pipeline goes uncaptured by traditional attribution. A buyer reads 15 posts over three months, Googles your company, and fills out a form. Your CRM says organic search. This is the dark social problem. The buyer's journey happened on LinkedIn, but the conversion happened elsewhere. Self-reported attribution (asking buyers directly) captures what software-based attribution misses."
+  - q: "How do you convert LinkedIn engagement into demos?"
+    a: "Converting engagement to demos requires a system: respond thoughtfully to every comment from ICP accounts (starting a micro-conversation), include a tangible resource in posts that filters for people with your target problem, optimize your LinkedIn profile with a clear booking link in the featured section, and follow up via DM when someone engages multiple times. The path is comment to conversation to DM to demo."
 ---
 
 Your CFO asks: "What's our ROI from LinkedIn?"

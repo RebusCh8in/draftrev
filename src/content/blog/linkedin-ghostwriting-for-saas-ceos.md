@@ -8,6 +8,13 @@ keywords:
   - founder-led content
   - linkedin pipeline generation
   - saas ceo ghostwriter
+faq:
+  - q: "Why are B2B SaaS CEOs hiring LinkedIn ghostwriters?"
+    a: "B2B SaaS CEOs are hiring ghostwriters because LinkedIn is the highest-ROI organic channel for pipeline generation, but most CEOs cannot sustain consistent posting alongside running a company. Ghostwriting solves the execution gap: the CEO's voice and perspective get published weekly without requiring 4 to 6 hours of their time. Founder-led content outperforms brand content by 3x to 5x on engagement."
+  - q: "How does LinkedIn ghostwriting drive pipeline for SaaS companies?"
+    a: "LinkedIn ghostwriting drives pipeline by consistently publishing content from the CEO's profile that targets the company's ICP. Each post builds trust and familiarity. Over weeks and months, this trust compounds into inbound DMs, demo requests, and shorter sales cycles. At Draft, every post also includes a custom resource (spreadsheet, calculator, template) that captures leads directly."
+  - q: "Can a ghostwriter really sound like me on LinkedIn?"
+    a: "Yes, if the voice extraction process is thorough. A skilled ghostwriter studies how you think, talk, and frame ideas. They learn your vocabulary, your sentence rhythms, and your perspective on your market. The result should be content your own team can't distinguish from what you'd write yourself. The best test: when colleagues or clients ask if you've started posting more, the ghostwriting is working."
 ---
 
 You're running a SaaS company. Revenue targets, board decks, hiring, product. There's no shortage of things demanding your attention.

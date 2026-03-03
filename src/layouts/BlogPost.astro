@@ -1,5 +1,5 @@
 ---
-const { title, description, pubDate, updatedDate, keywords } = Astro.props;
+const { title, description, pubDate, updatedDate, keywords, faq, wordCount, readingTime } = Astro.props;
 const formattedDate = new Date(pubDate).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
 const formattedUpdate = updatedDate ? new Date(updatedDate).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }) : null;
 const slug = Astro.url.pathname.replace(/^\/blog\//, '').replace(/\/$/, '');
@@ -52,25 +52,25 @@ const ogImage = `https://draftrev.com/og-default.svg`;
       "datePublished": pubDateISO,
       "dateModified": modDateISO,
       "image": ogImage,
+      "inLanguage": "en-US",
+      "isAccessibleForFree": true,
+      ...(wordCount ? { "wordCount": wordCount } : {}),
+      ...(readingTime ? { "timeRequired": `PT${readingTime}M` } : {}),
       "author": {
         "@type": "Organization",
-        "@id": "https://draftrev.com/#organization",
-        "name": "Draft",
-        "url": "https://draftrev.com"
+        "@id": "https://draftrev.com/#organization"
       },
       "publisher": {
         "@type": "Organization",
-        "@id": "https://draftrev.com/#organization",
-        "name": "Draft",
-        "url": "https://draftrev.com",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://draftrev.com/favicon.svg"
-        }
+        "@id": "https://draftrev.com/#organization"
       },
       "mainEntityOfPage": {
         "@type": "WebPage",
         "@id": Astro.url.href
+      },
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [".article-title", ".prose h2", ".prose p:first-of-type"]
       },
       "articleSection": "LinkedIn Strategy",
       ...(keywords ? { "keywords": keywords.join(", ") } : {}),
@@ -80,6 +80,24 @@ const ogImage = `https://draftrev.com/og-default.svg`;
         "name": "Draft Blog",
         "url": "https://draftrev.com/blog/"
       }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://draftrev.com/#organization",
+      "name": "Draft",
+      "url": "https://draftrev.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://draftrev.com/favicon.svg"
+      },
+      "description": "LinkedIn ghostwriting engineered for pipeline. We help B2B SaaS CEOs turn LinkedIn content into demos, signups, and revenue.",
+      "knowsAbout": [
+        "LinkedIn ghostwriting",
+        "B2B SaaS marketing",
+        "Founder-led content",
+        "Pipeline generation",
+        "LinkedIn content strategy"
+      ]
     },
     {
       "@type": "BreadcrumbList",
@@ -103,7 +121,19 @@ const ogImage = `https://draftrev.com/og-default.svg`;
           "name": title
         }
       ]
-    }
+    },
+    ...(faq && faq.length > 0 ? [{
+      "@type": "FAQPage",
+      "@id": `${Astro.url.href}#faq`,
+      "mainEntity": faq.map((item: {q: string, a: string}) => ({
+        "@type": "Question",
+        "name": item.q,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": item.a
+        }
+      }))
+    }] : [])
   ]
 })} />
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -381,6 +411,72 @@ nav .container { max-width: 1140px; margin: 0 auto; padding: 0 2rem; display: fl
   }
 }
 
+/* ── FAQ SECTION ── */
+.faq-section {
+  margin: 3rem 0;
+  padding-top: 2.5rem;
+  border-top: 1px solid var(--border);
+}
+.faq-heading {
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+  line-height: 1.15;
+  color: var(--text-bright);
+  margin-bottom: 1.5rem;
+}
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+.faq-item {
+  border-bottom: 1px solid var(--border);
+}
+.faq-item:first-child {
+  border-top: 1px solid var(--border);
+}
+.faq-question {
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: var(--text-bright);
+  padding: 1.25rem 0;
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  transition: color 0.2s ease;
+}
+.faq-question::-webkit-details-marker { display: none; }
+.faq-question::after {
+  content: '+';
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: var(--accent);
+  flex-shrink: 0;
+  transition: transform 0.3s var(--ease-out);
+}
+.faq-item[open] .faq-question::after {
+  transform: rotate(45deg);
+}
+.faq-question:hover { color: var(--accent); }
+.faq-answer {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--text);
+  font-weight: 300;
+  padding: 0 0 1.5rem;
+  max-width: 680px;
+}
+
+@media (max-width: 768px) {
+  .faq-heading { font-size: 1.5rem; }
+  .faq-question { font-size: 0.95rem; }
+  .faq-answer { font-size: 0.92rem; }
+}
+
 /* ── CTA BLOCK ── */
 .article-cta {
   background: var(--bg-card);
@@ -553,6 +649,20 @@ footer .container { max-width: 1140px; }
     <div class="prose">
       <slot />
     </div>
+
+    {faq && faq.length > 0 && (
+      <section class="faq-section" aria-label="Frequently Asked Questions">
+        <h2 class="faq-heading">Frequently Asked Questions</h2>
+        <div class="faq-list">
+          {faq.map((item: {q: string, a: string}) => (
+            <details class="faq-item">
+              <summary class="faq-question">{item.q}</summary>
+              <p class="faq-answer">{item.a}</p>
+            </details>
+          ))}
+        </div>
+      </section>
+    )}
 
     <div class="article-cta">
       <h3>Want posts that drive pipeline like this?</h3>
