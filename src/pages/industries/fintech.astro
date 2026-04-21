@@ -786,6 +786,66 @@ footer .container { max-width: 1140px; }
   .cta-section { padding: 4rem 0; }
   .cta-headline { font-size: 1.7rem; }
 }
+
+/* ── Wider + cooler cards ── */
+.content-section > .container:has(.pain-grid),
+.content-section > .container:has(.process-grid),
+.content-section > .container:has(.results-grid) {
+  max-width: 1140px;
+}
+.pain-grid, .process-grid, .results-grid {
+  gap: 1.75rem;
+  margin: 3rem 0 1rem;
+}
+.pain-card, .step-card, .result-card {
+  padding: 2.75rem 2.25rem;
+  border-radius: 22px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.4s var(--ease-out), box-shadow 0.4s var(--ease-out), border-color 0.4s var(--ease-out);
+}
+.pain-card::after, .step-card::after, .result-card::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: var(--accent);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s var(--ease-out);
+}
+.pain-card:hover, .step-card:hover, .result-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(232, 85, 58, 0.35);
+  box-shadow: 0 24px 60px rgba(26, 21, 16, 0.08), 0 4px 12px rgba(232, 85, 58, 0.06);
+}
+.pain-card:hover::after, .step-card:hover::after, .result-card:hover::after { transform: scaleX(1); }
+.pain-card-title, .step-title {
+  font-size: 1.5rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+.pain-card-desc, .step-desc {
+  font-size: 1rem;
+  line-height: 1.75;
+}
+.step-number {
+  display: inline-block;
+  background: rgba(232, 85, 58, 0.08);
+  padding: 0.35rem 0.75rem;
+  border-radius: 100px;
+  margin-bottom: 1.25rem;
+}
+.result-metric {
+  font-size: clamp(2.75rem, 4vw, 3.25rem);
+}
+@media (max-width: 1024px) {
+  .pain-grid, .process-grid, .results-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 640px) {
+  .pain-grid, .process-grid, .results-grid { grid-template-columns: 1fr; }
+  .pain-card, .step-card, .result-card { padding: 2rem; }
+}
 </style>
 </head>
 <body>
@@ -1010,15 +1070,16 @@ footer .container { max-width: 1140px; }
         </ul>
       </div>
       <div>
-        <div class="footer-heading">Industries</div>
+        <div class="footer-heading"><a href="/industries/">Industries</a></div>
         <ul class="footer-links">
+          <li><a href="/industries/ai/">AI</a></li>
           <li><a href="/industries/fintech/">Fintech</a></li>
           <li><a href="/industries/dev-tools/">Dev Tools</a></li>
           <li><a href="/industries/hr-tech/">HR Tech</a></li>
         </ul>
       </div>
       <div>
-        <div class="footer-heading">Compare</div>
+        <div class="footer-heading"><a href="/compare/">Compare</a></div>
         <ul class="footer-links">
           <li><a href="/compare/ghostwriter-vs-agency/">Ghostwriter vs Agency</a></li>
           <li><a href="/compare/linkedin-vs-cold-email/">LinkedIn vs Cold Email</a></li>
