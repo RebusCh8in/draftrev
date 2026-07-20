@@ -16,9 +16,9 @@ faq:
     a: "Price depends on scope, with solo freelancers at the lower end and full-service agencies higher because they add strategy and production work like video and lead magnets."
   - q: "How many posts per month is normal?"
     a: "Roughly one high-quality post per week is a common cadence, since consistency matters more than raw volume."
-  - q: "How long until a LinkedIn ghostwriter works?"
+  - q: "How long until it works?"
     a: "Results build over weeks of consistent posting, so judge progress by pipeline moving in your CRM rather than by early likes."
-  - q: "How do I make sure the posts sound like me?"
+  - q: "How do I make sure it sounds like me?"
     a: "A strong ghostwriter runs a voice-capture step that pulls from your real perspective, which is what makes the posts read as you."
 ---
 
@@ -135,20 +135,6 @@ Some sellers should skip it. If you sell to consumers, want raw volume spread ac
 The clearest signal is your deal size. High-ACV deals give one booked demo enough value to justify the whole program, while low-ticket or high-volume sales rarely do.
 
 Honesty here builds trust. A ghostwriter willing to disqualify a bad-fit prospect is a ghostwriter who cares whether the work produces revenue. Draft says upfront when it isn't the right fit.
-
-## Frequently Asked Questions
-
-**Is using a LinkedIn ghostwriter ethical?** Yes, because the ideas and opinions are yours, and delegating the writing is standard practice across publishing, PR, journalism, and executive communications.
-
-**Will people know a ghostwriter wrote my posts?** The voice and the ideas are yours, so when the work is done well, the posts read as you and readers respond to the substance.
-
-**How much does a LinkedIn ghostwriter cost?** Price depends on scope, with solo freelancers at the lower end and full-service agencies higher because they add strategy and production work like video and lead magnets.
-
-**How many posts per month is normal?** Roughly one high-quality post per week is a common cadence, since consistency matters more than raw volume.
-
-**How long until it works?** Results build over weeks of consistent posting, so judge progress by pipeline moving in your CRM rather than by early likes.
-
-**How do I make sure it sounds like me?** A strong ghostwriter runs a voice-capture step that pulls from your real perspective, which is what makes the posts read as you.
 
 ## Conclusion: Treat LinkedIn as Pipeline Infrastructure
 
