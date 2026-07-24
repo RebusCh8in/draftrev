@@ -197,7 +197,7 @@
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
@@ -215,7 +215,7 @@
   --accent-hover: #D44425;
   --accent-dim: rgba(232, 85, 58, 0.06);
   --accent-glow: rgba(232, 85, 58, 0.10);
-  --font-display: 'Instrument Serif', Georgia, serif;
+  --font-display: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Helvetica, Arial, sans-serif;
   --font-body: 'Outfit', -apple-system, sans-serif;
   --font-mono: 'JetBrains Mono', monospace;
   --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
@@ -233,6 +233,11 @@ body {
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   cursor: none;
+}
+
+em {
+  font-style: normal;
+  font-weight: 600;
 }
 
 ::selection { background: rgba(232, 85, 58, 0.15); color: var(--text-bright); }
@@ -632,6 +637,8 @@ nav .container { display: flex; align-items: center; justify-content: space-betw
 .hero h1 {
   font-family: var(--font-display);
   font-size: clamp(3rem, 6.5vw, 5.2rem);
+  font-weight: 600;
+  letter-spacing: -0.025em;
   line-height: 1.05;
   color: var(--text-bright);
   max-width: 850px;
@@ -655,7 +662,6 @@ nav .container { display: flex; align-items: center; justify-content: space-betw
 }
 .hero h1 .pop {
   color: var(--accent);
-  font-style: italic;
 }
 
 .hero-sub {
@@ -668,10 +674,11 @@ nav .container { display: flex; align-items: center; justify-content: space-betw
   animation: fadeUp 0.9s var(--ease-out) 0.5s both;
 }
 .hero-sub em {
-  font-style: italic;
+  font-style: normal;
   font-family: var(--font-display);
+  font-weight: 600;
   color: var(--accent);
-  font-size: 1.15em;
+  font-size: 1.05em;
 }
 
 .hero-ctas {
@@ -743,7 +750,6 @@ nav .container { display: flex; align-items: center; justify-content: space-betw
   margin-top: 1.75rem;
   font-size: 0.8rem;
   color: var(--text-muted);
-  font-style: italic;
   opacity: 0;
   animation: fadeUp 0.9s var(--ease-out) 0.95s both;
 }
@@ -817,6 +823,8 @@ nav .container { display: flex; align-items: center; justify-content: space-betw
 .section-title {
   font-family: var(--font-display);
   font-size: clamp(2.2rem, 4vw, 3.2rem);
+  font-weight: 600;
+  letter-spacing: -0.02em;
   line-height: 1.08;
   color: var(--text-bright);
   max-width: 600px;
@@ -893,7 +901,6 @@ nav .container { display: flex; align-items: center; justify-content: space-betw
   font-size: 1.1rem;
   color: var(--text);
   font-weight: 400;
-  font-style: italic;
   margin-left: 0.35em;
 }
 .result-desc {
@@ -958,6 +965,8 @@ nav .container { display: flex; align-items: center; justify-content: space-betw
 }
 .step-title {
   font-family: var(--font-display);
+  font-weight: 600;
+  letter-spacing: -0.01em;
   font-size: 1.45rem;
   color: var(--text-bright);
   margin-bottom: 0.85rem;
@@ -993,16 +1002,18 @@ nav .container { display: flex; align-items: center; justify-content: space-betw
 }
 .callout-text p:first-child {
   font-family: var(--font-display);
+  font-weight: 600;
+  letter-spacing: -0.01em;
   font-size: 1.4rem;
   color: var(--text-bright);
   margin-bottom: 0.75rem;
   line-height: 1.3;
 }
 .callout-text em {
-  font-style: italic;
+  font-style: normal;
   font-family: var(--font-display);
   color: var(--accent);
-  font-size: 1.05em;
+  font-size: 1em;
 }
 
 /* ── STATS ── */
@@ -1125,6 +1136,8 @@ nav .container { display: flex; align-items: center; justify-content: space-betw
 .offer-title {
   font-family: var(--font-display);
   font-size: clamp(2.8rem, 5.5vw, 4rem);
+  font-weight: 600;
+  letter-spacing: -0.02em;
   line-height: 1.05;
   color: #FFFFFF;
   margin-bottom: 1rem;
@@ -1246,6 +1259,8 @@ nav .container { display: flex; align-items: center; justify-content: space-betw
 }
 .offer-guarantee-text {
   font-family: var(--font-display);
+  font-weight: 600;
+  letter-spacing: -0.01em;
   font-size: 1.75rem; color: #FFFFFF;
   line-height: 1.25; margin-bottom: 1.25rem;
 }
@@ -1282,6 +1297,8 @@ nav .container { display: flex; align-items: center; justify-content: space-betw
 }
 .offer-fast-action-text {
   font-family: var(--font-display);
+  font-weight: 600;
+  letter-spacing: -0.01em;
   font-size: 1.75rem; color: #FFFFFF;
   line-height: 1.25; margin-bottom: 1.25rem;
 }
@@ -1344,7 +1361,7 @@ nav .container { display: flex; align-items: center; justify-content: space-betw
 .objection-q {
   font-family: var(--font-display);
   font-size: 1.2rem;
-  font-style: italic;
+  font-weight: 600;
   color: var(--text);
   transition: color 0.3s ease;
   flex: 1;
@@ -1414,13 +1431,15 @@ nav .container { display: flex; align-items: center; justify-content: space-betw
 .final-headline {
   font-family: var(--font-display);
   font-size: clamp(2.4rem, 4.5vw, 3.6rem);
+  font-weight: 600;
+  letter-spacing: -0.02em;
   line-height: 1.1;
   color: var(--text-bright);
   max-width: 700px;
   margin: 0 auto 1.5rem;
 }
 .final-headline em {
-  font-style: italic;
+  font-style: normal;
   color: var(--accent);
 }
 .final-sub {

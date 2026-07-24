@@ -138,7 +138,7 @@ const ogImage = `https://draftrev.com/og-default.svg`;
 })} />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style is:global>
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
@@ -154,7 +154,7 @@ const ogImage = `https://draftrev.com/og-default.svg`;
   --text-bright: #1A1510;
   --accent: #E8553A;
   --accent-hover: #D44425;
-  --font-display: 'Instrument Serif', Georgia, serif;
+  --font-display: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Helvetica, Arial, sans-serif;
   --font-body: 'Outfit', -apple-system, sans-serif;
   --font-mono: 'JetBrains Mono', monospace;
   --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
@@ -258,6 +258,8 @@ nav .container { max-width: 1140px; margin: 0 auto; padding: 0 2rem; display: fl
 }
 .article-title {
   font-family: var(--font-display);
+  font-weight: 600;
+  letter-spacing: -0.015em;
   font-size: clamp(2.2rem, 4.5vw, 3rem);
   line-height: 1.1;
   color: var(--text-bright);
@@ -275,6 +277,8 @@ nav .container { max-width: 1140px; margin: 0 auto; padding: 0 2rem; display: fl
 }
 .prose h2 {
   font-family: var(--font-display);
+  font-weight: 600;
+  letter-spacing: -0.015em;
   font-size: 1.8rem;
   line-height: 1.15;
   color: var(--text-bright);
@@ -283,6 +287,8 @@ nav .container { max-width: 1140px; margin: 0 auto; padding: 0 2rem; display: fl
 }
 .prose h3 {
   font-family: var(--font-display);
+  font-weight: 600;
+  letter-spacing: -0.015em;
   font-size: 1.35rem;
   line-height: 1.2;
   color: var(--text-bright);
@@ -313,6 +319,8 @@ nav .container { max-width: 1140px; margin: 0 auto; padding: 0 2rem; display: fl
 }
 .prose em {
   font-family: var(--font-display);
+  font-weight: 600;
+  letter-spacing: -0.015em;
   color: var(--accent);
   font-size: 1.05em;
 }
@@ -324,7 +332,6 @@ nav .container { max-width: 1140px; margin: 0 auto; padding: 0 2rem; display: fl
   border-radius: 0 12px 12px 0;
 }
 .prose blockquote p {
-  font-style: italic;
   color: var(--text-secondary);
   margin-bottom: 0;
 }
@@ -419,6 +426,8 @@ nav .container { max-width: 1140px; margin: 0 auto; padding: 0 2rem; display: fl
 }
 .faq-heading {
   font-family: var(--font-display);
+  font-weight: 600;
+  letter-spacing: -0.015em;
   font-size: 1.8rem;
   line-height: 1.15;
   color: var(--text-bright);
@@ -498,6 +507,8 @@ nav .container { max-width: 1140px; margin: 0 auto; padding: 0 2rem; display: fl
 }
 .article-cta h3 {
   font-family: var(--font-display);
+  font-weight: 600;
+  letter-spacing: -0.015em;
   font-size: 1.5rem;
   color: var(--text-bright);
   margin-bottom: 0.5rem;

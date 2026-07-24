@@ -48,7 +48,7 @@
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
@@ -65,7 +65,7 @@
   --accent: #E8553A;
   --accent-hover: #D44425;
   --accent-dim: rgba(232, 85, 58, 0.06);
-  --font-display: 'Instrument Serif', Georgia, serif;
+  --font-display: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Helvetica, Arial, sans-serif;
   --font-body: 'Outfit', -apple-system, sans-serif;
   --font-mono: 'JetBrains Mono', monospace;
   --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
@@ -144,6 +144,8 @@ nav .container { display: flex; align-items: center; justify-content: space-betw
 }
 .calc-hero h1 {
   font-family: var(--font-display);
+  font-weight: 600;
+  letter-spacing: -0.015em;
   font-size: clamp(2.4rem, 5vw, 3.5rem);
   line-height: 1.1;
   color: var(--text-bright);
@@ -269,6 +271,8 @@ input[type="range"]::-moz-range-track {
 }
 .result-revenue {
   font-family: var(--font-display);
+  font-weight: 600;
+  letter-spacing: -0.015em;
   font-size: clamp(3.5rem, 7vw, 5.5rem);
   line-height: 1;
   color: var(--text-bright);
